@@ -1,0 +1,14 @@
+﻿@model Korizza.Models.Article.ArticleModel
+@{
+    ViewData["Title"] = Model.Title;
+}
+    <div>
+        <a asp-action="Articles">Back to List</a>
+    </div>
+<h1>Artilce author is @Model.Author</h1>
+<div id="Article">
+    @Html.Raw(Model.Text)
+</div>
+<div>
+    <a asp-action="Articles">Back to List</a>
+</div>

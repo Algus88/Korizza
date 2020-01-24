@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korizza", "Korizza\Korizza.csproj", "{0C280AEE-C2E8-442C-BD9B-9A60FD557590}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C280AEE-C2E8-442C-BD9B-9A60FD557590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C280AEE-C2E8-442C-BD9B-9A60FD557590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C280AEE-C2E8-442C-BD9B-9A60FD557590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C280AEE-C2E8-442C-BD9B-9A60FD557590}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58F23308-D65F-408F-80DD-3556725882E4}
+	EndGlobalSection
+EndGlobal

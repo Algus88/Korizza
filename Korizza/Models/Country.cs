@@ -1,0 +1,17 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+
+namespace Korizza.Models
+{
+    public class Country
+    {
+        public int Id { get; set; }
+        public string CategoryName { get; set; }
+        public string CategoryDescription { get; set; }
+        public List<Voucher> vouchers { get; set; }
+    }
+}

@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Korizza.Models.Article.ArticleModel>
+@{
+    ViewBag.Title = "Articles list";
+}
+
+    <table class="table">
+        <tr><th>Article title</th><th>Author</th><th></th></tr>
+        @foreach (var article in Model)
+        {
+            <tr>
+                <td>@article.Title</td>
+                <td>@article.Author</td>
+                <td>
+                    <form asp-action="Delete" asp-route-id="@article.Id" method="post">
+                        <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-id="@article.Id">Изменить</a>
+                        <button type="submit" class="btn btn-sm btn-danger">
+                            Удалить
+                        </button>
+
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+

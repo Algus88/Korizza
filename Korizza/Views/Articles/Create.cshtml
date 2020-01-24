@@ -1,0 +1,68 @@
+﻿@model Korizza.Models.Article.ArticleModel
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summernote with Bootstrap 4</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote-bs4.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote-bs4.min.js"></script>
+</head>
+<body>
+    <div color="green"> ViewBag.Message</div>
+    <form asp-action="Create" asp-controller="Articles" asp-antiforgery="true">
+        <div>
+            <label asp-for="Title"></label><br />
+            <input asp-for="Title" />
+        </div>
+        <div>
+            <label asp-for="Author"></label><br />
+            <input asp-for="Author" />
+        </div>
+        <div>
+            <label asp-for="Id" hidden></label><br />
+            <input asp-for="Id" hidden />
+        </div>
+        <div>
+            <label asp-for="Text" hidden></label><br />
+            <input asp-for="Text" hidden />
+        </div>
+        <div id="summernote" hidden></div>
+        <div>
+            <input type="submit" class="btn btn-primary" onclick="StoreEnteredData()" value="Save" />
+        </div>
+    </form>
+    <script>
+
+            $('#summernote').summernote({
+                placeholder: 'Hello stand alone ui',
+                tabsize: 2,
+                height: 300,
+                fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Times New Roman'],
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'underline', 'clear']],
+                    ['fontname', ['fontname']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['table', ['table']],
+                    ['insert', ['link', 'picture', 'video']],
+                    ['view', ['fullscreen', 'codeview', 'help']]
+                ]
+            });
+    </script>
+    <script>
+            function StoreEnteredData () {
+                var markup = $('#summernote').summernote('code');
+                var element = document.getElementById('Text');
+                element.value = markup;
+                $('#summernote').summernote('destroy');
+            };
+    </script>
+</body>
+</html>
