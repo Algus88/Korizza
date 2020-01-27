@@ -29,10 +29,14 @@ namespace Korizza.Controllers
                 return View(await articles.ToListAsync());
         }
         
-        public IActionResult ArticlesList()
-        {        
-            var articles = db.Articles.ToList();
-            return View(articles);
+        public async Task<IActionResult> ArticlesList(string searchRequest)
+        {
+            var articles = db.Articles.Select(a => a);
+            if (!String.IsNullOrEmpty(searchRequest))
+            {
+                articles = articles.Where(a => a.Title.Contains(searchRequest));
+            }
+            return View(await articles.ToListAsync());
         }
         public IActionResult Create()
         {
