@@ -1,5 +1,7 @@
 ﻿@model Korizza.Models.Article.ArticleModel
-
+@{
+    Layout = "_Authorize";
+}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,30 +41,30 @@
     </form>
     <script>
 
-            $('#summernote').summernote({
-                placeholder: 'Hello stand alone ui',
-                tabsize: 2,
-                height: 300,
-                fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Times New Roman'],
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'underline', 'clear']],
-                    ['fontname', ['fontname']],
-                    ['color', ['color']],
-                    ['para', ['ul', 'ol', 'paragraph']],
-                    ['table', ['table']],
-                    ['insert', ['link', 'picture', 'video']],
-                    ['view', ['fullscreen', 'codeview', 'help']]
-                ]
-            });
+        $('#summernote').summernote({
+            placeholder: 'Hello stand alone ui',
+            tabsize: 2,
+            height: 300,
+            fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Times New Roman'],
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['fontname', ['fontname']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview', 'help']]
+            ]
+        });
     </script>
     <script>
-            function StoreEnteredData () {
-                var markup = $('#summernote').summernote('code');
-                var element = document.getElementById('Text');
-                element.value = markup;
-                $('#summernote').summernote('destroy');
-            };
+        function StoreEnteredData() {
+            var markup = $('#summernote').summernote('code');
+            var element = document.getElementById('Text');
+            element.value = markup;
+            $('#summernote').summernote('destroy');
+        };
     </script>
 </body>
 </html>

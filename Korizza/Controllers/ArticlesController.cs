@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Korizza.Controllers
 {
+    [Authorize]
     public class ArticlesController : Controller
     {
         private ApplicationDbContext db;
@@ -17,12 +18,17 @@ namespace Korizza.Controllers
         {
             db = context;
         }
-        public IActionResult Articles()
+        [AllowAnonymous]
+        public async Task<IActionResult> Articles(string searchRequest)
         {
-            var articles = db.Articles.ToList();
-            return View(articles);
+            var articles = db.Articles.Select(a=>a);
+            if (!String.IsNullOrEmpty(searchRequest))
+            {
+                articles = articles.Where(a => a.Title.Contains(searchRequest));
+            }
+                return View(await articles.ToListAsync());
         }
-        [Authorize]
+        
         public IActionResult ArticlesList()
         {        
             var articles = db.Articles.ToList();
@@ -78,6 +84,7 @@ namespace Korizza.Controllers
             return NotFound();
         }
 
+        [AllowAnonymous]
         // action should take article id parameter 
         public IActionResult ArticleDetails(int id)
         {

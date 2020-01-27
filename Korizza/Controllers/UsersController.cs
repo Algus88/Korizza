@@ -7,6 +7,7 @@ using Korizza.Models.Users;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Korizza.Controllers
 {
@@ -14,14 +15,22 @@ namespace Korizza.Controllers
     public class UsersController : Controller
     {
          private readonly UserManager<User> _userManager;
-         public UsersController(UserManager<User> userMan)
+         private readonly SignInManager<User> _signInManager;
+        public UsersController(UserManager<User> userMan, SignInManager<User> signInManager)
         {
             _userManager = userMan;
+            _signInManager = signInManager;
         }
-        
-        public IActionResult UserCard()
+
+        public async Task<IActionResult> UsersList(string searchRequest)
         {
-            return View(_userManager.Users.ToList());
+            var usersList = _userManager.Users;
+
+            if (!String.IsNullOrEmpty(searchRequest))
+            {
+                usersList = usersList.Where(s => s.UserName.Contains(searchRequest));
+            }
+            return View(await usersList.ToListAsync());
         }
 
         public IActionResult Create()
@@ -33,12 +42,12 @@ namespace Korizza.Controllers
         {
             if (ModelState.IsValid)
             {
-                User user = new User { Email = model.Email };
-                var exist =  _userManager.UserValidators;
+                User user = new User { Email = model.Email, UserName = model.Name };
                 var result = await _userManager.CreateAsync(user, model.Password);
-                if(result.Succeeded)
+                if (result.Succeeded)
                 {
-                    return View("Index");
+                    await _signInManager.SignInAsync(user, false);
+                    return RedirectToAction("UsersList");
                 }
                 else
                 {
@@ -64,12 +73,11 @@ namespace Korizza.Controllers
             {
                 var user = await _userManager.FindByIdAsync(model.Id);
                 user.Email = model.Email;
-                // modify password hashing
-                user.Password = model.Password;
+                user.PasswordHash = model.Password;
                 var result = await _userManager.UpdateAsync(user);
                 if (result.Succeeded)
                 {
-                    return View("UserCard");
+                    return View("UsersList");
                 }
                 else
                 {
@@ -79,7 +87,7 @@ namespace Korizza.Controllers
                     }
                 }
             }
-                return View("UserCard");
+                return View("UsersList");
         }
 
     }

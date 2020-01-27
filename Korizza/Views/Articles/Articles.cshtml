@@ -1,8 +1,16 @@
 ﻿@model IEnumerable<Korizza.Models.Article.ArticleModel>
 @{
+    Layout = "_Layout";
+}
+@{
     ViewBag.Title = "Articles";
 }
-
+<form asp-controller="Articles" asp-action="Articles">
+    <p>
+        Title: <input type="text" name="SearchRequest">
+        <input type="submit" value="Filter" />
+    </p>
+</form>
 <table class="table">
     <tr><th>Article title</th><th>Author</th><th></th></tr>
     @foreach (var article in Model)
@@ -11,8 +19,8 @@
             <td>@article.Title</td>
             <td>@article.Author</td>
             <td>
-                <form asp-action="ArticleDetails" asp-route-id="@article.Id" method="get">        
-                    <button type="submit" class="btn btn-sm btn-danger">
+                <form asp-action="ArticleDetails" asp-route-id="@article.Id" method="get">
+                    <button type="submit" class="btn btn-sm btn-primary">
                         Details
                     </button>
                 </form>

@@ -128,7 +128,6 @@ C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\bin\Debug\netcoreapp3.1\zh-Han
 C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
 C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\obj\Debug\netcoreapp3.1\Razor\Views\Users\Create.cshtml.g.cs
 C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\obj\Debug\netcoreapp3.1\Razor\Views\Users\Edit.cshtml.g.cs
-C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\obj\Debug\netcoreapp3.1\Razor\Views\Users\UserCard.cshtml.g.cs
 C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
@@ -147,3 +146,5 @@ C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\obj\Debug\netcoreapp3.1\Razor\
 C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Edit.cshtml.g.cs
 C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\obj\Debug\netcoreapp3.1\Razor\Views\Articles\ArticleDetails.cshtml.g.cs
 C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\obj\Debug\netcoreapp3.1\Razor\Views\Articles\Articles.cshtml.g.cs
+C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Authorize.cshtml.g.cs
+C:\Users\agu.KHARKIV\source\repos\Korizza\Korizza\obj\Debug\netcoreapp3.1\Razor\Views\Users\UsersList.cshtml.g.cs

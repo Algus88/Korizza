@@ -33,7 +33,7 @@ namespace Korizza.Controllers
                 var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
                 if (result.Succeeded)
                 {
-                    HttpContext.Response.Cookies.Append("name", model.Email);
+                    //HttpContext.Response.Cookies.Append("name", model.Email);
                     // проверяем, принадлежит ли URL приложению
                     if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
                     {
@@ -41,7 +41,7 @@ namespace Korizza.Controllers
                     }
                     else
                     {
-                        return RedirectToAction("UserCard", "Users");
+                        return RedirectToAction("Index", "Home");
                     }
                 }
                 else
