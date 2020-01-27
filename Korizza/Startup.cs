@@ -30,7 +30,7 @@ namespace Korizza
 
             services.ConfigureApplicationCookie(options =>
             {
-                //options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+                options.AccessDeniedPath = "/Login/Login";
                 //options.Cookie.Name = "YourAppCookieName";
                 //options.Cookie.HttpOnly = true;
                 //options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
