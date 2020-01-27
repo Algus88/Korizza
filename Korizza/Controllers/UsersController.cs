@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Korizza.Controllers
 {
-    
+    [Authorize]
     public class UsersController : Controller
     {
          private readonly UserManager<User> _userManager;
@@ -32,11 +32,12 @@ namespace Korizza.Controllers
             }
             return View(await usersList.ToListAsync());
         }
-
+        [Authorize(Roles = "admin")]
         public IActionResult Create()
         {
             return View();
         }
+        [Authorize(Roles = "admin")]
         [HttpPost]
         public async Task<IActionResult> Create(CreateUserViewModel model)
         {
@@ -59,6 +60,7 @@ namespace Korizza.Controllers
             }
             return View(model);
         }
+        [Authorize(Roles = "admin,editor")]
         public async Task<IActionResult> EditAsync(string userName)
         {
             //HttpContext.Response.Cookies.Append("name", userName);
@@ -66,6 +68,7 @@ namespace Korizza.Controllers
             EditUserViewModel model = new EditUserViewModel { Id = user.Id, Email = user.Email};
             return View(model);
         }
+        [Authorize(Roles = "admin,editor")]
         [HttpPost]
         public async Task<IActionResult> EditAsync(EditUserViewModel model)
         {
