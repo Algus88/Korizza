@@ -65,11 +65,11 @@ namespace Korizza.Controllers
         }
         [HttpPost]
         public async Task<IActionResult> Edit(ArticleModel article)
-        {
+        { 
             db.Articles.Update(article);
             await db.SaveChangesAsync();
             ViewBag.Message = "Saving success";
-            return RedirectToAction("Edit");
+            return View(article); ;
         }
        // action should take articles id
         [HttpPost]
@@ -82,6 +82,7 @@ namespace Korizza.Controllers
                 {
                     db.Articles.Remove(removalbleArticle);
                     await db.SaveChangesAsync();
+                    ViewBag.Message = "Removing success";
                     return RedirectToAction("ArticleList");
                 }
             }
@@ -95,7 +96,6 @@ namespace Korizza.Controllers
             var article = db.Articles.Where(x => x.Id == id).FirstOrDefault(); 
             return View(article);
         }
-
     }
 
 }

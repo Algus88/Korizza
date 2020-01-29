@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote-bs4.min.js"></script>
 </head>
 <body>
-    <div color="green"> ViewBag.Message</div>
+    <div id="validationMessage">@ViewBag.Message</div>
     <form asp-action="Create" asp-controller="Articles" asp-antiforgery="true">
         <div>
             <label asp-for="Title"></label><br />
@@ -65,6 +65,12 @@
             element.value = markup;
             $('#summernote').summernote('destroy');
         };
+    </script>
+    <script>
+        var message = document.getElementById('validationMessage');
+        if (message.textContent != "") {
+            message.className = "bg-success text-white justify-content-center rounded p-0 d-flex align-items-center py-2 px-3";
+        }
     </script>
 </body>
 </html>

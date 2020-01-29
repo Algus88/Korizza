@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote-bs4.min.js"></script>
 </head>
 <body>
-    <div color="green"> @ViewBag.Message</div>
+    <div id="validationMessage">@ViewBag.Message</div>
     <div class="row">
         <div class="col-md-4">
             <form asp-action="Edit">
@@ -44,9 +44,11 @@
                 </div>
                 <div id="summernote" hidden></div>
                 <div>
-                    <input type="submit" class="btn btn-primary" onclick="StoreEnteredData()" value="Save" />
+                    <input type="submit" class="btn btn-success" onclick="StoreEnteredData()" value="Save" />
                 </div>
             </form>
+            <a asp-action="ArticlesList" class="button btn btn-primary btn-sm active" role="button">Back to List</a>
+
             <script>
                 $('#summernote').summernote({
                     placeholder: 'Hello stand alone ui',
@@ -80,10 +82,12 @@
             </script>
         </div>
     </div>
-
-    <div>
-        <a asp-action="ArticlesList">Back to List</a>
-    </div>
+    <script>
+        var message = document.getElementById('validationMessage');
+        if (message.textContent != "") {
+            message.className = "bg-success text-white justify-content-center rounded p-0 d-flex align-items-center py-2 px-3";
+        }
+    </script>
 </body>
 </html>
 

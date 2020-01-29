@@ -60,27 +60,37 @@ namespace Korizza.Controllers
             }
             return View(model);
         }
-        [Authorize(Roles = "admin,editor")]
-        public async Task<IActionResult> EditAsync(string userName)
+
+        [Authorize]
+        public async Task<IActionResult> Edit(string userName)
         {
             //HttpContext.Response.Cookies.Append("name", userName);
             User user = await _userManager.FindByNameAsync(userName);
             EditUserViewModel model = new EditUserViewModel { Id = user.Id, Email = user.Email};
             return View(model);
         }
-        [Authorize(Roles = "admin,editor")]
+
+        [Authorize]
         [HttpPost]
-        public async Task<IActionResult> EditAsync(EditUserViewModel model)
+        public async Task<IActionResult> Edit(EditUserViewModel model)
         {
             if (ModelState.IsValid)
             {
                 var user = await _userManager.FindByIdAsync(model.Id);
-                user.Email = model.Email;
-                user.PasswordHash = model.Password;
+                if (model.Email != null)
+                {
+                    user.Email = model.Email; 
+                }
+                var passwordHasher = HttpContext.RequestServices.GetService(typeof(IPasswordHasher<User>)) as IPasswordHasher<User>;
+                if (model.Password != null)
+                {
+                    user.PasswordHash = passwordHasher.HashPassword(user, model.Password);
+                }
                 var result = await _userManager.UpdateAsync(user);
                 if (result.Succeeded)
                 {
-                    return View("UsersList");
+                    ViewBag.Message = "Update complete";
+                    //return RedirectToAction("UsersList");
                 }
                 else
                 {
@@ -90,8 +100,18 @@ namespace Korizza.Controllers
                     }
                 }
             }
-                return View("UsersList");
+                return View(model);
         }
-
+        [Authorize]
+        [HttpPost]
+        public async Task<ActionResult> Delete(string id)
+        {
+            User user = await _userManager.FindByIdAsync(id);
+            if (user != null)
+            {
+                IdentityResult result = await _userManager.DeleteAsync(user);
+            }
+            return RedirectToAction("UsersList");
+        }
     }
 }

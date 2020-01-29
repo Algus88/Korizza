@@ -7,7 +7,7 @@ namespace Korizza.Data
 {
     public class DbInicializer
     {
-
+       static string password = "Qwerty12!";
         public static async Task InitializeAsync(UserManager<User> userManager, RoleManager<IdentityRole> roleManager)
         {
             UsersAndRoles users = new UsersAndRoles();
@@ -22,7 +22,7 @@ namespace Korizza.Data
              {
                  if (userManager.FindByNameAsync(user.UserName).Result == null)
                  {
-                    await userManager.CreateAsync(user);
+                    await userManager.CreateAsync(user, password);
                     if(user.UserName.Contains("admin"))
                     {
                         await userManager.AddToRoleAsync(user, users.RoleList()[0]);

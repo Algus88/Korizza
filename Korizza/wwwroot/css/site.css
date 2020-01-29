@@ -127,3 +127,6 @@ body {
 .rotate {
     transform: scaleX(-1);
 }
+.button {
+    margin-top:10px;
+}

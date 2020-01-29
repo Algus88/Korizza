@@ -5,7 +5,7 @@
 @{
     ViewBag.Title = "Articles list";
 }
-<a asp-action="Create">Добавить пользователя</a>
+<div id="validationMessage">@ViewBag.Message</div>
 <form asp-controller="Articles" asp-action="ArticlesList">
     <p>
         Title: <input type="text" name="SearchRequest">
@@ -31,4 +31,10 @@
         </tr>
     }
 </table>
+<script>
+        var message = document.getElementById('validationMessage');
+        if (message.textContent != "") {
+            message.className = "bg-success text-white justify-content-center rounded p-0 d-flex align-items-center py-2 px-3";
+        }
+</script>
 
