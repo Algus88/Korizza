@@ -6,26 +6,48 @@
     <title>@ViewBag.Title</title>
     <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/css/site.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+    @*<link href="/lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="/lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">*@
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/site.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
 </head>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
-<div id="header">
-    <a href="/" id="logo">Kori<span class="letter">z</span><span class="rotate">z</span>a Travel</a>
-    <ul id="menu">
-        <li><a href="~/Articles/Articles"><span>Articles</span></a></li>
-        <li><a href="~/Articles/ArticlesList"><span>Edit Articles</span></a></li>
-        <li><a href="~/Login/Login"><span>Login</span></a></li>
-        <li><a href="~/Users/UsersList"><span>Users List</span></a></li>
-    </ul>
-
-</div>
 <body>
+    <div>
+        <img class="logo" src="~/img/korizza_logo.png" alt="Site logo">
+        @*<ul id="menu">
+                <li><a href="~/Articles/Articles"><span>Articles</span></a></li>
+                <li><a href="~/Articles/ArticlesList"><span>Edit Articles</span></a></li>
+                <li><a href="~/Login/Login"><span>Login</span></a></li>
+                <li><a href="~/Users/UsersList"><span>Users List</span></a></li>
+            </ul>*@
+    </div>
     <div class="container mt-5">
         @RenderBody()
     </div>
+    <div class="footer">
+        <div class="footer_data">
+            <div class="contacts">
+            <div>0664001775</div>
+            <div>0939682469</div>
+            </div>
+            <div class="address">Kharkiv, Svobody str, b.37</div>
+            <div class="social_media">
+                <a href="#">
+                    <img class="social_icons" src="/img/insta.png" />
+                </a>
+                <a href="https://invite.viber.com/?g=9Fj08eSMnUc6K40K5aKRo8hmaZBmyFvA&lang=uk">
+                    <img class="social_icons" src="/img/viber_tile_logo_icon_170260.png" />
+                </a>
+            </div>
+        </div>
+    </div>
     <script src="~/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/js/adaptSearchBox.js" type="text/javascript"></script>
+    <script src="~/js/Mutation_edit.js" type="text/javascript"></script>
 </body>
 </html>
