@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\agu.KHARKIV\\source\\repos\\Korizza\\Korizza\\Korizza.csproj": {}
+    "G:\\My data\\Repos\\Korizza\\Korizza\\Korizza.csproj": {}
   },
   "projects": {
-    "C:\\Users\\agu.KHARKIV\\source\\repos\\Korizza\\Korizza\\Korizza.csproj": {
+    "G:\\My data\\Repos\\Korizza\\Korizza\\Korizza.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agu.KHARKIV\\source\\repos\\Korizza\\Korizza\\Korizza.csproj",
+        "projectUniqueName": "G:\\My data\\Repos\\Korizza\\Korizza\\Korizza.csproj",
         "projectName": "Korizza",
-        "projectPath": "C:\\Users\\agu.KHARKIV\\source\\repos\\Korizza\\Korizza\\Korizza.csproj",
-        "packagesPath": "C:\\Users\\agu.KHARKIV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agu.KHARKIV\\source\\repos\\Korizza\\Korizza\\obj\\",
+        "projectPath": "G:\\My data\\Repos\\Korizza\\Korizza\\Korizza.csproj",
+        "packagesPath": "C:\\Users\\agu\\.nuget\\packages\\",
+        "outputPath": "G:\\My data\\Repos\\Korizza\\Korizza\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\agu.KHARKIV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\agu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +29,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +41,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -59,9 +61,17 @@
               "target": "Package",
               "version": "[3.1.0, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.9, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.0, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[4.5.2, )"
             }
           },
           "imports": [
@@ -82,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

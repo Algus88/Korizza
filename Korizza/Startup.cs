@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System;
+using Korizza.Middleware;
 
 namespace Korizza
 {
@@ -42,11 +43,13 @@ namespace Korizza
             });
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
             app.UseDeveloperExceptionPage();
 
             app.UseHttpsRedirection();
+            app.UseRobotsTxt(env);
             app.UseStaticFiles();
 
             app.UseRouting();

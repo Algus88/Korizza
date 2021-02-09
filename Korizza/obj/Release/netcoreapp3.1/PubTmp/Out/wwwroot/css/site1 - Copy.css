@@ -1,0 +1,3864 @@
+﻿.imageSize {
+    max-height: 190px;
+    width: inherit;
+}
+
+body {
+    padding: 20px 80px;
+    background: url(/img/background1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+
+/*body {
+    padding: 20px 80px;
+    background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+}*/
+
+/*#logo {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 150px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+}
+
+    #logo:after {
+        content: "Korizza Travel";
+        position: absolute;
+        top: 44px;
+    }
+
+    #logo:after {*/
+/*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
+/*background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+        background-size: 4px 4px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: -5;
+        display: block;
+        text-shadow: none;
+    }*/
+
+#menu {
+    height: auto;
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 25px 10px;
+    border-top: 4px double #AAA;
+    border-bottom: 4px double #AAA;
+    position: relative;
+    text-align: center;
+}
+
+    #menu li {
+        display: inline-block;
+        width: 250px;
+        margin: 0 10px;
+        position: relative;
+        -webkit-transform: skewy(-3deg);
+        -webkit-backface-visibility: hidden;
+        -webkit-transition: 200ms all;
+    }
+
+        #menu li a {
+            text-transform: uppercase;
+            font-family: 'Squada One', cursive;
+            font-weight: 800;
+            display: block;
+            background: #FFF;
+            padding: 2px 10px;
+            color: #333;
+            font-size: 35px;
+            text-align: center;
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
+            text-shadow: 1px 1px 0px #FFF, 2px 2px 0px #999, 3px 3px 0px #FFF;
+            background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.05) 100%);
+            -webkit-transition: 1s all;
+            background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, rgba(0,0,0,.15) 25%, rgba(0,0,0,.15) 50%, transparent 50%, transparent 75%, rgba(0,0,0,.15) 75%);
+            background-size: 4px 4px;
+            box-shadow: 0 0 0 1px rgba(0,0,0,.4) inset, 0 0 20px -5px rgba(0,0,0,.4), 0 0 0px 3px #FFF inset;
+        }
+
+        #menu li:hover {
+            width: 220px;
+            margin: 0 -5px;
+        }
+
+    #menu a:hover {
+        color: #d90075;
+    }
+
+    #menu li:after,
+    #menu li:before {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 100%;
+        background: #BBB;
+        -webkit-transform: skewY(8deg);
+        x-index: -3;
+        border-radius: 4px;
+    }
+
+    #menu li:after {
+        background-image: -webkit-linear-gradient(left, transparent 0%, rgba(0,0,0,.4) 100%);
+        right: 0;
+        top: -4px;
+    }
+
+    #menu li:before {
+        left: 0;
+        bottom: -4px;
+        background-image: -webkit-linear-gradient(right, transparent 0%, rgba(0,0,0,.4) 100%);
+    }
+
+html body img.logo {
+    width: 100%;
+}
+
+.content {
+}
+/*.tour_search_module {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}*/
+.footer {
+    /*    width: 80%;
+    background: steelblue;
+    flex: 0 0 auto;
+    min-height: 80px;
+    margin: auto;*/
+    width: 100%;
+    min-height: 150px;
+    background-color: bisque;
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 25px 10px;
+    border-top: 4px double #AAA;
+    border-bottom: 4px double #AAA;
+}
+
+.footer_data {
+}
+
+/*for search module*/
+#ui-datepicker-div {
+    z-index: 99909 !important;
+}
+
+body #isolate * h2 {
+    background: none repeat scroll 0 0 transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+}
+
+html body #isolate * iframe {
+    width: 600px;
+    height: 90px;
+}
+
+html body #isolate * .clear {
+    border: none;
+    clear: both;
+}
+
+html body #isolate * .itt_in_middel {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    line-height: 16px;
+}
+
+#isolated .title-bar h2 strong {
+    font-size: 13px !important;
+}
+
+html body #tour_search_module {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    line-height: 16px;
+}
+
+html body #isolate {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    line-height: 15px;
+}
+
+    html body #isolate * input {
+        /*border:none;*/
+    }
+
+    html body #isolate * div {
+        /*border:none;*/
+    }
+
+    html body #isolate * p {
+        border: none;
+    }
+
+    html body #isolate * label {
+        text-align: left;
+    }
+
+    html body #isolate * table {
+        border: none;
+        margin: 0;
+        padding: 0 5px 0 0;
+        width: 100%;
+        height: auto;
+        line-height: 16px;
+        overflow: hidden;
+    }
+
+tr td .ellipsis {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    line-height: 16px;
+}
+
+html body #isolate * tr {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    line-height: 16px;
+}
+
+html body html body #isolate * td {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    line-height: 16px;
+}
+
+html body #isolate * a {
+    border: none;
+}
+
+html body #isolate * li {
+    border: none;
+    text-align: left;
+}
+
+html body #isolate * ul {
+    border: none;
+    margin: 0px;
+}
+
+html body #isolate .itt_main_block input, html body #isolate .itt_main_block select {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 15px;
+    color: #000 !important;
+    font-size: 12px !important;
+}
+
+    html body #isolate .itt_main_block input, html body #isolate .itt_main_block select option {
+        color: #000 !important;
+        font-size: 12px !important;
+    }
+
+html body #isolate .itt_main_block select,
+html body #isolate * .col-detail-type input {
+    background: #fff;
+}
+
+html body #isolate * .tour_search_result {
+    width: 650px;
+    /*float: left;*/
+    padding: 20px 0 0;
+    /*display:inline;*/
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    border: none;
+}
+
+    html body #isolate * .tour_search_result .hike_search_result_table,
+    html body #isolate * .tour_search_result .package_search_result_table {
+        border: medium none;
+        height: auto;
+        line-height: 15px;
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+
+#isolated h2 {
+    border-left: none !important;
+}
+
+#isolated {
+    color: #000 !important;
+}
+
+
+
+
+
+html body #isolate * .tour_search_result .hike_search_result_table .itt_title h2.itt_result_title {
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #C8C8C8;
+    background: none;
+    color: #000000;
+    width: 100%;
+    text-align: left;
+}
+
+html body #isolate * .tour_search_result .hike_search_result_table .itt_title p.itt_price_nb_txt {
+    border: none;
+    font-weight: bold;
+    padding: 5px 0 0 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    line-height: 15px;
+    float: left;
+    color: black;
+    text-align: left;
+}
+
+    html body #isolate * .tour_search_result .hike_search_result_table .itt_title p.itt_price_nb_txt span.itt_red_star {
+        padding: 0;
+        margin: 0 8px 0 0;
+        width: auto;
+        height: auto;
+        line-height: 15px;
+        color: #c50000;
+        font-weight: bold;
+    }
+
+html body #isolate .itt_main_block input {
+    overflow: none !important;
+}
+
+
+
+
+
+
+
+html body #isolate * .tour_load,
+.tour_load {
+    width: 650px;
+    float: left;
+    text-align: center;
+    margin: 15px 0 0 0;
+    display: none;
+    line-height: inherit;
+    padding: 0;
+    height: inherit;
+    border: none;
+}
+
+html body #isolate * .itt_results_status {
+    float: left;
+    width: 100%;
+    color: #000;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    border: none;
+}
+
+
+
+
+
+html body #isolate * .hike_search_result_table tr.itt_search_note .itt_tour_search_note {
+    width: auto;
+    line-height: inherit;
+    margin: 20px 0 0;
+    padding: 0;
+    height: inherit;
+    border: none;
+}
+
+    html body #isolate * .hike_search_result_table tr.itt_search_note .itt_tour_search_note p.itt_tour_note {
+        width: auto;
+        line-height: inherit;
+        margin: 0;
+        padding: 0;
+        height: inherit;
+        border: none;
+    }
+
+        html body #isolate * .hike_search_result_table tr.itt_search_note .itt_tour_search_note p.itt_tour_note span.itt_red_star {
+            color: #C50000;
+            height: auto;
+            line-height: 15px;
+            margin: 0 8px 0 0;
+            padding: 0;
+            width: auto;
+        }
+
+
+
+html body #isolate * .package_search_result_table .itt_results {
+    border-left: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    float: left;
+    color: #000;
+    width: auto;
+    line-height: inherit;
+    /*margin-left: 5px; */
+    padding: 0;
+    height: inherit;
+    /*border:1px solid black;	*/
+}
+
+html body #isolated #isolate * .package_search_result_table .itt_results { /* маржин нужен для попап-окон */
+    margin-left: 5px;
+}
+
+html body #isolate * .results_status {
+    border: 0px none;
+    font-size: 12px;
+    width: auto;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+}
+
+html body #isolate * .package_search_result_table .itt_results th.with_right_border {
+    border-right: 1px solid #c8c8c8;
+}
+
+html body #isolate * .package_search_result_table .itt_results th {
+    font-weight: bold;
+    padding: 0px 0;
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    background: #f7f8f9;
+    width: auto;
+    line-height: 12px;
+    margin: 0px;
+    height: 36px;
+}
+
+
+    html body #isolate * .package_search_result_table .itt_results th.first {
+        border-left: 1px solid #c8c8c8;
+    }
+
+html body #isolate * .package_search_result_table .itt_results td {
+    padding: 5px;
+    height: 28px;
+    width: auto;
+    line-height: inherit;
+    margin: 0;
+    border: none;
+}
+
+    html body #isolate * .package_search_result_table .itt_results td.last {
+        border-right: 1px solid #c8c8c8;
+    }
+
+html body #isolate * .package_search_result_table .itt_results tr.odd {
+    background: none repeat scroll 0 0 #EFEFEF;
+}
+
+html body #isolate * .package_search_result_table .itt_results tr.even {
+    background: none repeat scroll 0 0 #F6F6F6;
+}
+
+html body #isolate * .package_search_result_table .itt_results tr td.text-center {
+    text-align: center;
+}
+
+html body #isolate * .package_search_result_table .itt_results tr td .grey {
+    color: #999;
+    line-height: 16px;
+}
+
+html body #isolate * .package_search_result_table .itt_results tr.pager {
+    height: 34px;
+}
+
+html body #isolate * .package_search_result_table .itt_results td input.order {
+    display: block;
+    height: 25px;
+    width: 82px !important;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+html body #isolate * .package_search_result_table tr.itt_pager td.pager-content .link {
+    display: inline;
+    float: left;
+    margin: 0px;
+    width: auto;
+    line-height: inherit;
+    padding: 0;
+    height: inherit;
+    border: none;
+}
+
+html body #isolate * .package_search_result_table tr.itt_search_note .itt_tour_search_note {
+    width: auto;
+    line-height: inherit;
+    margin: 20px 0 0;
+    padding: 0;
+    height: inherit;
+    border: none;
+}
+
+    html body #isolate * .package_search_result_table tr.itt_search_note .itt_tour_search_note p.itt_tour_note {
+        width: auto;
+        line-height: inherit;
+        margin: 0;
+        padding: 0;
+        height: inherit;
+        border: none;
+    }
+
+        html body #isolate * .package_search_result_table tr.itt_search_note .itt_tour_search_note p.itt_tour_note span.itt_red_star {
+            color: #C50000;
+            height: auto;
+            line-height: 15px;
+            margin: 0 8px 0 0;
+            padding: 0;
+            width: auto;
+            font-weight: bold;
+        }
+
+html body #isolate * .package_search_result_table tr.itt_pager td.pager-content .link a:hover {
+    text-decoration: none;
+}
+
+html body #isolate * .package_search_result_table tr.itt_pager td.pager-content .pager-list {
+    display: inline;
+    float: right;
+    margin: 0px;
+    width: auto;
+    line-height: 15px;
+    padding: 0;
+    height: 20px;
+    border: none;
+}
+
+    html body #isolate * .package_search_result_table tr.itt_pager td.pager-content .pager-list ul {
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        line-height: 15px;
+        margin: 0;
+        padding: 0;
+        height: inherit;
+        border: none;
+    }
+
+        html body #isolate * .package_search_result_table tr.itt_pager td.pager-content .pager-list ul li {
+            display: inline;
+            float: left;
+            margin: 0 5px 0 0;
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            line-height: inherit;
+            padding: 0;
+            border: none;
+        }
+
+            html body #isolate * .package_search_result_table tr.itt_pager td.pager-content .pager-list ul li.preview {
+                width: auto;
+            }
+
+            html body #isolate * .package_search_result_table tr.itt_pager td.pager-content .pager-list ul li.next {
+                width: auto;
+            }
+
+            html body #isolate * .hike_search_result_table tr.itt_pager td.pager-content .pager-list ul li span.left,
+            html body #isolate * .hike_search_result_table tr.itt_pager td.pager-content .pager-list ul li span.right,
+            html body #isolate * .package_search_result_table tr.itt_pager td.pager-content .pager-list ul li span.left,
+            html body #isolate * .package_search_result_table tr.itt_pager td.pager-content .pager-list ul li span.right {
+                background: none;
+            }
+
+            html body #isolate * .package_search_result_table tr.itt_pager td.pager-content .pager-list ul li a {
+                display: block;
+                text-decoration: underline;
+                color: black !important;
+                width: auto;
+                line-height: 18px;
+                margin: 0;
+                padding: 0;
+                height: inherit;
+                border: none;
+            }
+
+                html body #isolate * .package_search_result_table tr.itt_pager td.pager-content .pager-list ul li a:hover {
+                    text-decoration: none;
+                }
+
+            html body #isolate * .package_search_result_table tr.itt_pager td.pager-content .pager-list ul li.active a {
+                text-decoration: none;
+                background: #F7F8F9;
+            }
+
+                html body #isolate * .package_search_result_table tr.itt_pager td.pager-content .pager-list ul li.active a:hover {
+                    cursor: default !important;
+                    text-decoration: none;
+                }
+
+html body #isolate * .hike_search_result_table .tour_not_found_description, html body #isolate * .package_search_result_table .tour_not_found_description {
+    color: black;
+    font-weight: bold;
+    padding-top: 17px;
+    float: left;
+}
+
+    html body #isolate * .hike_search_result_table .tour_not_found_description .tour_not_found_link, html body #isolate * .package_search_result_table .tour_not_found_description .tour_not_found_link {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #0000CC;
+    }
+
+html body #isolate * .hike_search_result_table .itt_crumbs,
+html body #isolate * .package_search_result_table .itt_crumbs {
+    float: left;
+    height: auto;
+    line-height: 15px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    border: none;
+}
+
+    html body #isolate * .hike_search_result_table .itt_crumbs ul,
+    html body #isolate * .package_search_result_table .itt_crumbs ul {
+        float: left;
+        margin: 5px 0 10px !important;
+        padding: 0;
+        list-style: none;
+        width: auto;
+        line-height: inherit;
+        height: inherit;
+        border: none;
+    }
+
+        html body #isolate * .hike_search_result_table .itt_crumbs ul li,
+        html body #isolate * .package_search_result_table .itt_crumbs ul li {
+            display: inline;
+            padding: 0 3px 0 5px;
+            border-left: 1px solid;
+            width: auto;
+            line-height: inherit;
+            margin: 0;
+            height: inherit;
+        }
+
+            html body #isolate * .hike_search_result_table .itt_crumbs ul li.itt_first,
+            html body #isolate * .package_search_result_table .itt_crumbs ul li.itt_first {
+                background: none;
+                padding: 0;
+                border-left: 0px;
+                font-weight: bold;
+            }
+
+            html body #isolate * .hike_search_result_table .itt_crumbs ul li.itt_second,
+            html body #isolate * .package_search_result_table .itt_crumbs ul li.itt_second {
+                background: none;
+                border-left: 0px;
+            }
+
+html body #isolate * .package_search_result_table span.price_prior {
+    text-decoration: line-through;
+}
+
+html body #isolate * .hike_search_result_table .results {
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+html body #isolate * .results_status {
+    border: none;
+    padding: 20px 0;
+    float: left;
+}
+
+html body #isolate * .hike_search_result_table .results th {
+    font-weight: bold;
+    padding: 5px;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+html body #isolate * .hike_search_result_table .results td {
+    padding: 5px;
+    height: 28px;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+html body #isolate * .hike_search_result_table .results tr.odd {
+    background: none repeat scroll 0 0 #EFEFEF;
+}
+
+html body #isolate * .hike_search_result_table .results tr.even {
+    background: none repeat scroll 0 0 #F6F6F6;
+}
+
+html body #isolate * .hike_search_result_table .results tr.pager {
+    height: 34px;
+}
+
+html body #isolate * .hike_search_result_table .results td input.order {
+    display: block;
+    height: 25px;
+    width: 82px;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+html body #isolate * .hike_search_result_table tr.itt_pager td.pager-content .link {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    line-height: 15px;
+    border: none;
+}
+
+    html body #isolate * .hike_search_result_table tr.itt_pager td.pager-content .link a {
+        color: #004CA1;
+        /*display:block;*/
+        font-size: 12px;
+        text-decoration: underline;
+    }
+
+        html body #isolate * .hike_search_result_table tr.itt_pager td.pager-content .link a:hover {
+            text-decoration: none;
+        }
+
+html body #isolate * .hike_search_result_table tr.itt_pager td.pager-content .pager-list {
+    display: inline;
+    float: right;
+    margin: 0;
+    padding: 10px 0;
+    width: auto;
+    height: auto;
+    line-height: 15px;
+    border: none;
+}
+
+    html body #isolate * .hike_search_result_table tr.itt_pager td.pager-content .pager-list ul {
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        border: none;
+        line-height: 15px;
+        width: auto;
+    }
+
+        html body #isolate * .hike_search_result_table tr.itt_pager td.pager-content .pager-list ul li {
+            display: inline;
+            float: left;
+            margin: 0 5px 0 0;
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            border: none;
+            line-height: 15px;
+            text-align: center;
+        }
+
+            html body #isolate * .hike_search_result_table tr.itt_pager td.pager-content .pager-list ul li.preview,
+            html body #isolate * .hike_search_result_table tr.itt_pager td.pager-content .pager-list ul li.next {
+                width: auto;
+            }
+
+            html body #isolate * .hike_search_result_table tr.itt_pager td.pager-content .pager-list ul li a {
+                display: block;
+                text-decoration: underline;
+                width: auto;
+                line-height: 18px;
+                margin: 0;
+                padding: 0;
+                height: inherit;
+                border: none;
+            }
+
+                html body #isolate * .hike_search_result_table tr.itt_pager td.pager-content .pager-list ul li a:hover {
+                    text-decoration: none;
+                }
+
+
+
+
+            html body #isolate * .hike_search_result_table tr.itt_pager td.pager-content .pager-list ul li.active a {
+                text-decoration: none;
+                background: #F7F8F9;
+            }
+
+
+
+
+
+
+
+
+
+
+
+html body #isolate * .hike_search_result_table .itt_crumbs {
+    float: left;
+}
+
+    html body #isolate * .hike_search_result_table .itt_crumbs ul {
+        float: left;
+        margin: 5px 0 10px 0px;
+        padding: 0;
+        list-style: none;
+    }
+
+        html body #isolate * .hike_search_result_table .itt_crumbs ul li {
+            display: inline;
+            padding: 0 3px 0 5px;
+            border-left: 1px solid;
+        }
+
+            html body #isolate * .hike_search_result_table .itt_crumbs ul li.itt_first {
+                background: none;
+                padding: 0;
+                border-left: 0px;
+                font-weight: bold;
+            }
+
+            html body #isolate * .hike_search_result_table .itt_crumbs ul li.itt_second {
+                background: none;
+                border-left: 0px;
+            }
+
+#isolated .hike_search_result_table span.price_prior {
+    text-decoration: line-through;
+}
+
+#isolated .tour_order_table {
+    margin: 0 auto;
+    width: 670px;
+    font-family: Arial;
+    font-size: 12px;
+    color: #000000;
+}
+
+    #isolated .tour_order_table h3 {
+        margin: 0 0 12px;
+        padding: 2px 0 0;
+        float: left;
+        display: inline;
+        width: 600px;
+        background: none;
+        border: none;
+        font-size: 17px;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    #isolated .tour_order_table h4 {
+        margin: 15px 0 12px;
+        padding: 2px 0 0;
+        float: left;
+        display: inline;
+        width: auto;
+        background: none;
+        border: none;
+        font-size: 17px;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    #isolated .tour_order_table a.itt_right_link_close_header {
+        margin: 15px 0 12px;
+        padding: 2px 0 0;
+        float: right;
+        display: inline;
+        width: auto;
+        background: none;
+        border: none;
+        font-size: 12px;
+        color: black;
+        font-weight: bold;
+    }
+
+    #isolated .tour_order_table .itt_close_header {
+        border-bottom: 2px solid #C8C8C8;
+        line-height: 14px;
+        margin: 0;
+        padding: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    #isolated .tour_order_table .itt_open_header {
+        line-height: 14px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+#isolated .package_order_form {
+    float: left;
+    width: 670px;
+}
+
+#isolated .tour_order_table tr.itt_odd_order {
+    background-color: #ECECF1 !important;
+}
+
+#isolated .package_order_form .itt_first_level {
+    float: left;
+    width: 670px;
+}
+
+    #isolated .package_order_form .itt_first_level .first_frame {
+        float: left;
+        padding: 10px;
+        width: 311px;
+        height: 255px;
+        display: inline;
+        border: 1px solid #c8c8c8;
+    }
+
+    #isolated .package_order_form .itt_first_level .second_frame {
+        display: inline;
+        float: left;
+        padding: 10px;
+        height: 255px;
+        border: 1px solid #c8c8c8;
+        margin-left: 4px;
+        width: 310px;
+    }
+
+        #isolated .package_order_form .itt_first_level .second_frame .comment_block {
+            float: left;
+            padding: 10px 0;
+            display: inline;
+        }
+
+            #isolated .package_order_form .itt_first_level .second_frame .comment_block label.comment_title {
+                font-weight: bold;
+                float: left;
+                width: 300px;
+                padding-bottom: 5px;
+                display: inline;
+            }
+
+            #isolated .package_order_form .itt_first_level .second_frame .comment_block textarea {
+                display: block;
+                float: left;
+                height: 78px;
+                width: 294px;
+                background: white;
+            }
+
+        #isolated .package_order_form .itt_first_level .second_frame .sub_comment_text {
+            float: left;
+            padding: 6px 0;
+        }
+
+            #isolated .package_order_form .itt_first_level .second_frame .sub_comment_text p {
+                margin: 0 0 5px;
+                font-style: italic;
+            }
+
+#isolated .package_order_form .send_block {
+    float: left;
+    width: 650px;
+}
+
+    #isolated .package_order_form .send_block input {
+        margin: 5px auto;
+        display: block;
+        height: 33px;
+        width: 107px;
+        cursor: pointer;
+        border: none;
+        background: #3399ff url(../images/bg_gradient_btn.png) no-repeat !important;
+        line-height: inherit;
+        padding: 0;
+    }
+/* table with border */
+html body #isolate * table.itt_two_block {
+    /*border:1px solid #c8c8c8;*/
+}
+
+    html body #isolate * table.itt_two_block td.itt_two_block_border {
+        border: 1px solid #c8c8c8;
+    }
+
+#isolated .tour_order_table .itt_order_tour_two_box {
+    float: left;
+    width: 670px;
+}
+
+    #isolated .tour_order_table .itt_order_tour_two_box .itt_left_box {
+        float: left;
+        width: 320px;
+        padding-left: 10px;
+        display: inline;
+    }
+
+    #isolated .tour_order_table .itt_order_tour_two_box .itt_right_box {
+        float: left;
+        width: 320px;
+        padding-left: 10px;
+        display: inline;
+        margin: 0 0 0 2px;
+        display: inline;
+    }
+
+#isolated .tour_order_table .tour_general_info_border {
+    border-left: 0px solid #000;
+    border-bottom: 0px solid #000;
+}
+
+    #isolated .tour_order_table .tour_general_info_border th {
+        font-weight: bold;
+        padding: 5px;
+        border-right: 0px solid #000;
+        border-top: 0px solid #000;
+    }
+
+    #isolated .tour_order_table .tour_general_info_border td {
+        padding: 5px;
+        border-right: 0px solid #000;
+        border-top: 0px solid #000;
+    }
+
+        #isolated .tour_order_table .tour_general_info_border td .hike_price {
+            font-size: larger;
+            color: red;
+        }
+
+        #isolated .tour_order_table .tour_general_info_border td span input {
+            margin: 0 5px 0 0;
+            width: auto;
+            line-height: inherit;
+            padding: 0;
+            height: inherit;
+            border: 1px solid black;
+        }
+
+        #isolated .tour_order_table .tour_general_info_border td span.radio input {
+            border: none;
+        }
+
+
+        #isolated .tour_order_table .tour_general_info_border td.bold {
+            font-weight: bold;
+            font-size: small;
+        }
+
+        #isolated .tour_order_table .tour_general_info_border td.line {
+            border-left: 0px solid #000;
+        }
+
+    #isolated .tour_order_table .tour_general_info_border tr.odd {
+        background: #EFEFEF;
+    }
+
+    #isolated .tour_order_table .tour_general_info_border tr.even {
+        background: #F6F6F6;
+    }
+
+    #isolated .tour_order_table .tour_general_info_border tr td.hike_description {
+        padding: 0px;
+        height: auto;
+    }
+
+        #isolated .tour_order_table .tour_general_info_border tr td.hike_description div {
+            padding: 3px 8px 6px 8px;
+        }
+
+    #isolated .tour_order_table .tour_general_info_border td span.price {
+        font-weight: bold;
+        font-size: 16px;
+        color: red;
+    }
+
+#isolated .tour_order_table .error_form {
+    display: none;
+    float: left;
+}
+
+    #isolated .tour_order_table .error_form ul {
+        margin: 0;
+        padding-bottom: 8px;
+        color: red;
+    }
+
+#isolated .tour_order_table .tour_general_info_border tr.itt_pager {
+    height: 34px;
+}
+
+#isolated .tour_order_table .tour_general_info_border td input.order {
+    display: block;
+    height: 25px;
+    width: 82px;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+/* end table with border */
+#isolated .tour_order_table .tour_general_info {
+    border-left: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    float: left;
+}
+
+    #isolated .tour_order_table .tour_general_info th {
+        font-weight: normal;
+        padding: 5px;
+        border-right: 1px solid #c8c8c8;
+        border-top: 1px solid #c8c8c8;
+        border-bottom: 1px solid #c8c8c8;
+    }
+
+    #isolated .tour_order_table .tour_general_info td {
+        padding: 5px;
+        height: 28px;
+        border-right: 0px solid #000;
+        border-top: 0px solid #000;
+    }
+
+        #isolated .tour_order_table .tour_general_info td.last {
+            border-right: 1px solid #c8c8c8;
+        }
+
+        #isolated .tour_order_table .tour_general_info td.label {
+            width: 80px;
+        }
+
+        #isolated .tour_order_table .tour_general_info td.input_txt {
+            width: 230px;
+        }
+
+        #isolated .tour_order_table .tour_general_info td.enter_captcha {
+            width: 160px;
+        }
+
+        #isolated .tour_order_table .tour_general_info td.captcha_image {
+            width: 150px;
+        }
+
+        #isolated .tour_order_table .tour_general_info td.bold {
+            font-weight: bold;
+        }
+
+        #isolated .tour_order_table .tour_general_info td.line {
+            border-left: 0px solid #000;
+        }
+
+    #isolated .tour_order_table .tour_general_info tr.odd {
+        background: #EFEFEF;
+    }
+
+    #isolated .tour_order_table .tour_general_info tr.even {
+        background: #F6F6F6;
+    }
+
+    #isolated .tour_order_table .tour_general_info tr td.hike_description {
+        padding: 0px;
+        height: auto;
+    }
+
+        #isolated .tour_order_table .tour_general_info tr td.hike_description div {
+            padding: 3px 8px 6px 8px;
+        }
+
+    #isolated .tour_order_table .tour_general_info tr.error td {
+        display: none;
+    }
+
+        #isolated .tour_order_table .tour_general_info tr.error td ul {
+            margin: 0;
+            padding-left: 26px;
+        }
+
+    #isolated .tour_order_table .tour_general_info tr.itt_pager {
+        height: 34px;
+    }
+
+    #isolated .tour_order_table .tour_general_info td input.order {
+        display: block;
+        height: 25px;
+        width: 82px;
+        line-height: inherit;
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
+    }
+
+#isolated .tour_order_table .tour_general_info_no_border {
+    border-left: 0px solid #c8c8c8;
+    border-bottom: 0px solid #c8c8c8;
+    float: left;
+}
+
+    #isolated .tour_order_table .tour_general_info_no_border th {
+        font-weight: normal;
+        padding: 5px;
+        border-right: 1px solid #c8c8c8;
+        border-top: 1px solid #c8c8c8;
+        border-bottom: 1px solid #c8c8c8;
+    }
+
+    #isolated .tour_order_table .tour_general_info_no_border td {
+        padding: 5px;
+        height: 28px;
+        border-right: 0px solid #000;
+        border-top: 0px solid #000;
+    }
+
+        #isolated .tour_order_table .tour_general_info_no_border td.last {
+            border-right: 1px solid #c8c8c8;
+        }
+
+        #isolated .tour_order_table .tour_general_info_no_border td.label {
+            width: 80px;
+        }
+
+        #isolated .tour_order_table .tour_general_info_no_border td.input_txt {
+            width: 230px;
+        }
+
+        #isolated .tour_order_table .tour_general_info_no_border td.enter_captcha {
+            width: 160px;
+        }
+
+        #isolated .tour_order_table .tour_general_info_no_border td.captcha_image {
+            width: 150px;
+        }
+
+        #isolated .tour_order_table .tour_general_info_no_border td.bold {
+            font-weight: bold;
+        }
+
+        #isolated .tour_order_table .tour_general_info_no_border td.line {
+            border-left: 0px solid #000;
+        }
+
+    #isolated .tour_order_table .tour_general_info_no_border tr.odd {
+        background: #EFEFEF;
+    }
+
+    #isolated .tour_order_table .tour_general_info_no_border tr.even {
+        background: #F6F6F6;
+    }
+
+    #isolated .tour_order_table .tour_general_info_no_border tr td.hike_description {
+        padding: 0px;
+        height: auto;
+        border-right: 1px solid #C8C8C8;
+    }
+
+        #isolated .tour_order_table .tour_general_info_no_border tr td.hike_description div {
+            padding: 3px 8px 6px 8px;
+        }
+
+    #isolated .tour_order_table .tour_general_info_no_border tr.error td {
+        display: none;
+    }
+
+        #isolated .tour_order_table .tour_general_info_no_border tr.error td ul {
+            margin: 0;
+            padding-left: 26px;
+        }
+
+    #isolated .tour_order_table .tour_general_info_no_border tr.itt_pager {
+        height: 34px;
+    }
+
+    #isolated .tour_order_table .tour_general_info_no_border td input.order {
+        display: block;
+        height: 25px;
+        width: 82px;
+        line-height: inherit;
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
+    }
+
+html body #isolate * span.title3 {
+    font-weight: bold;
+}
+
+html body #isolate * span.title2 {
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+html body #isolate * img.hike_tour_plus {
+    margin-right: 5px;
+    border: 0px;
+}
+
+html body #isolate * :focus {
+    outline: 0;
+}
+
+html body #isolate * .hike_search_result_table .itt_title h2.itt_result_title {
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    color: #000;
+    line-height: 15px;
+    text-align: left;
+}
+
+html body #isolate * .itt_hike_search_result_table {
+    float: left;
+    color: #000;
+    border-bottom: 1px solid #C8C8C8;
+    border-left: 1px solid #C8C8C8;
+    margin-left: 5px;
+}
+
+    html body #isolate * .itt_hike_search_result_table tr th.with_right_border {
+        border-right: 1px solid #c8c8c8;
+    }
+
+    html body #isolate * .itt_hike_search_result_table tr th {
+        border-top: 1px solid #c8c8c8;
+        border-bottom: 1px solid #c8c8c8;
+        font-weight: normal;
+        background: #f7f8f9;
+        padding: 3px;
+        font-weight: bold;
+    }
+
+    html body #isolate * .itt_hike_search_result_table td {
+        vertical-align: middle;
+    }
+
+    html body #isolate * .itt_hike_search_result_table tr td {
+        text-align: left;
+        padding: 5px 3px;
+    }
+
+        html body #isolate * .itt_hike_search_result_table tr td.last {
+            border-right: 1px solid #c8c8c8;
+        }
+
+    html body #isolate * .itt_hike_search_result_table tr.even td {
+        background: #fff;
+    }
+
+    html body #isolate * .itt_hike_search_result_table tr.even td {
+        background: #f7f8f9;
+    }
+
+    html body #isolate * .itt_hike_search_result_table tr td a {
+        text-decoration: underline;
+    }
+
+        html body #isolate * .itt_hike_search_result_table tr td a:hover {
+            text-decoration: none;
+        }
+
+html body #isolate * .package_search_result_table .itt_title h2.itt_result_title {
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #C8C8C8;
+    background: none;
+    color: black;
+    width: 100%;
+    text-align: left;
+}
+
+html body #isolate * .package_search_result_table .itt_title p.itt_price_nb_txt {
+    border: none;
+    font-weight: bold;
+    padding: 5px 0 0 0;
+    margin: 0 0 0 15px;
+    width: 99%;
+    height: auto;
+    line-height: 15px;
+    float: left;
+    color: black;
+    text-align: left;
+}
+
+    html body #isolate * .package_search_result_table .itt_title p.itt_price_nb_txt span.itt_red_star {
+        padding: 0;
+        margin: 0 8px 0 0;
+        width: auto;
+        height: auto;
+        line-height: 15px;
+        color: #c50000;
+        font-weight: bold;
+    }
+
+html body #isolate * .package_search_result_table .itt_title h3.itt_country_searched {
+    border: none;
+    font-weight: normal;
+    font-size: 19px !important;
+    padding: 18px 0 10px;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    line-height: 15px;
+    float: left;
+    color: black;
+}
+
+    html body #isolate * .package_search_result_table .itt_title h3.itt_country_searched label.itt_country_name {
+        font-size: 19px !important;
+        border: none;
+        padding: 0;
+        margin: 0 0 0 15px;
+        width: auto;
+        height: auto;
+        line-height: 15px;
+        float: left;
+    }
+
+    html body #isolate * .package_search_result_table .itt_title h3.itt_country_searched img.itt_ico_flag {
+        border: none;
+        padding: 0;
+        margin: 3px 0 0 7px;
+        width: 19px;
+        height: 12px;
+        line-height: 15px;
+        float: left;
+    }
+
+html body #isolate * .itt_hike_search_result_table tr th {
+    font-weight: normal;
+    background: #f7f8f9;
+    padding: 0px 0;
+    font-weight: bold;
+    margin: 0px;
+    height: 41px;
+}
+
+html body #isolate * .itt_hike_search_result_table td {
+    vertical-align: middle;
+}
+
+html body #isolate * .itt_hike_search_result_table tr td {
+    text-align: left;
+    padding: 5px 3px;
+}
+
+    html body #isolate * .itt_hike_search_result_table tr td.last {
+        border-right: 1px solid #c8c8c8;
+    }
+
+    html body #isolate * .itt_hike_search_result_table tr td.text-center {
+        text-align: center;
+    }
+
+    html body #isolate * .itt_hike_search_result_table tr td.text-right {
+        text-align: right;
+    }
+
+html body #isolate * .itt_hike_search_result_table tr.odd td {
+    background: #fff;
+}
+
+html body #isolate * .itt_hike_search_result_table tr.even td {
+    background: #f7f8f9;
+}
+
+html body #isolate * .package_search_result_table tr td a {
+    text-decoration: underline;
+}
+
+html body #isolate * .itt_hike_search_result_table tr td a:hover {
+    text-decoration: none;
+}
+
+html body #isolate * .package_search_result_table .itt_title {
+    border: none;
+    height: auto;
+    line-height: 15px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+html body #isolate * .hike_search_result_table .results_status .itt_pager,
+html body #isolate * .package_search_result_table .results_status .itt_pager {
+    width: 650px;
+}
+/**/
+#isolated .tour_order_table .tour_general_touriste {
+    float: left;
+}
+
+    #isolated .tour_order_table .tour_general_touriste th {
+        font-weight: normal;
+        padding: 5px;
+        border-right: 1px solid #c8c8c8;
+        border-top: 1px solid #c8c8c8;
+        border-bottom: 1px solid #c8c8c8;
+    }
+
+    #isolated .tour_order_table .tour_general_touriste td {
+        padding: 5px;
+        width: 75px;
+        display: inline-block;
+        border-right: 0px solid #000;
+        border-top: 0px solid #000;
+    }
+
+        #isolated .tour_order_table .tour_general_touriste td label.title_strong {
+            font-weight: bold;
+        }
+
+        #isolated .tour_order_table .tour_general_touriste td label span.red_star {
+            color: #e62929;
+        }
+
+        #isolated .tour_order_table .tour_general_touriste td.second {
+            width: 215px;
+            padding: 5px 0;
+        }
+
+            #isolated .tour_order_table .tour_general_touriste td.second input {
+                width: 210px;
+                margin: 0 !important;
+                line-height: inherit;
+                padding: 0;
+                height: 20px;
+                border: 1px solid #C8C8C8;
+            }
+
+        #isolated .tour_order_table .tour_general_touriste td.captcha_image_block {
+            width: 140px;
+        }
+
+            #isolated .tour_order_table .tour_general_touriste td.captcha_image_block img {
+                width: 143px;
+                height: 43px;
+                display: block;
+            }
+
+        #isolated .tour_order_table .tour_general_touriste td.captcha_line {
+            padding: 6px 0 0 5px;
+            width: 300px;
+        }
+
+
+
+            #isolated .tour_order_table .tour_general_touriste td.captcha_line .captcha_input_block {
+                float: left;
+                width: 115px;
+            }
+
+            #isolated .tour_order_table .tour_general_touriste td.captcha_line .captcha_image_block {
+                float: left;
+                width: 180px;
+            }
+
+                #isolated .tour_order_table .tour_general_touriste td.captcha_line .captcha_image_block img {
+                    display: block;
+                    width: 180px;
+                    height: 46px;
+                }
+
+            #isolated .tour_order_table .tour_general_touriste td.captcha_line label {
+                float: left;
+                padding: 0 0 5px;
+            }
+
+            #isolated .tour_order_table .tour_general_touriste td.captcha_line input.input_captcha {
+                width: 105px;
+                margin: 0;
+                height: 20px;
+                border: 1px solid #c8c8c8;
+            }
+
+        #isolated .tour_order_table .tour_general_touriste td.last {
+            border-right: 1px solid #c8c8c8;
+        }
+
+        #isolated .tour_order_table .tour_general_touriste td.label {
+            width: 80px;
+        }
+
+        #isolated .tour_order_table .tour_general_touriste td.input_txt {
+            width: 230px;
+        }
+
+        #isolated .tour_order_table .tour_general_touriste td.enter_captcha {
+            width: 160px;
+        }
+
+        #isolated .tour_order_table .tour_general_touriste td.captcha_image {
+            width: 150px;
+        }
+
+        #isolated .tour_order_table .tour_general_touriste td.bold {
+            font-weight: bold;
+        }
+
+        #isolated .tour_order_table .tour_general_touriste td.line {
+            border-left: 0px solid #000;
+        }
+
+    #isolated .tour_order_table .tour_general_touriste tr {
+        margin: 0 0 5px;
+    }
+
+        #isolated .tour_order_table .tour_general_touriste tr.odd {
+            background: #EFEFEF;
+        }
+
+        #isolated .tour_order_table .tour_general_touriste tr.even {
+            background: #F6F6F6;
+        }
+
+        #isolated .tour_order_table .tour_general_touriste tr td.hike_description {
+            padding: 0px;
+            height: auto;
+        }
+
+            #isolated .tour_order_table .tour_general_touriste tr td.hike_description div {
+                padding: 3px 8px 6px 8px;
+                font-size: 13px;
+            }
+
+        #isolated .tour_order_table .tour_general_touriste tr.error td {
+            color: #FF0000;
+            display: none;
+        }
+
+            #isolated .tour_order_table .tour_general_touriste tr.error td ul {
+                margin: 0;
+                padding-left: 26px;
+            }
+
+        #isolated .tour_order_table .tour_general_touriste tr.itt_pager {
+            height: 34px;
+        }
+
+    #isolated .tour_order_table .tour_general_touriste td input.order {
+        display: block;
+        height: 25px;
+        width: 82px;
+    }
+
+#isolated .tour_order .load_center {
+    display: block;
+    height: 80px;
+    padding: 50px 109px;
+    width: 80px;
+}
+
+#isolated .tour_search_result .load_center {
+    display: block;
+    margin: 36px auto;
+}
+
+#isolated .tour_order .package_order_load {
+    display: block;
+    margin: 7px auto;
+    width: 220px;
+}
+
+#isolated .tour_order .hike_order_load {
+    display: block;
+    margin: 7px auto;
+    width: 220px;
+}
+
+#isolated {
+    position: absolute;
+}
+
+    #isolated .fixed {
+        position: fixed;
+    }
+
+/* Modal */
+
+.boxy-modal-blackout {
+    position: absolute;
+    background-color: black;
+    left: 0;
+    top: 0;
+}
+
+/* Border */
+
+#isolated {
+    empty-cells: show;
+    width: auto;
+}
+
+    #isolated .itt_main_block {
+        width: auto;
+    }
+
+    #isolated .left,
+    #isolated .right,
+    #isolated .top-left,
+    #isolated .top-right,
+    #isolated .bottom-right,
+    #isolated .bottom-left {
+        width: 10px;
+        height: 10px;
+        padding: 0
+    }
+
+    #isolated .top-left {
+    }
+
+    #isolated .top-right {
+    }
+
+    #isolated .bottom-right {
+    }
+
+    #isolated .bottom-left {
+    }
+
+    #isolated .top-custom,
+    #isolated .bottom-custom {
+    }
+
+    #isolated .left,
+    #isolated .right {
+    }
+
+    /* Title bar */
+
+    #isolated .title-bar {
+        background: url(../images/bg_replace/bg_top_module_right.png) no-repeat right top;
+        padding: 6px;
+        position: relative;
+        font-size: 8px;
+    }
+
+        #isolated .title-bar.dragging {
+            cursor: move;
+        }
+
+        #isolated .title-bar h2 {
+            font-size: 12px;
+            color: white;
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            float: none;
+            width: auto;
+            text-align: left;
+            background: none;
+        }
+
+        #isolated .title-bar .close {
+            background: url(../images/close.gif);
+            width: 9px;
+            height: 9px;
+            display: block;
+            text-decoration: none;
+            text-indent: -9999px;
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            font-size: 90%;
+            line-height: 1;
+        }
+
+/* Content Region */
+
+html body #isolated * .boxy-inner {
+    background-color: white;
+    padding: 0;
+    border: 4px solid #1871AB !important;
+    -moz-border-radius: 5px !important;
+    -khtml-border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+}
+
+#isolated .boxy-content { /*padding: 5px;overflow: hidden;*/
+    border: 1px solid #C0C0C0; /*margin: 1px 0 0;*/ /*background:#fff;*/
+}
+
+#isolated .message .boxy-content {
+    width: auto !important;
+    height: auto !important;
+    display: none !important;
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 0px;
+}
+/* Question Boxes */
+
+#isolated .question {
+    width: 350px;
+    min-height: 80px;
+}
+
+#isolated .answers {
+    text-align: right;
+}
+
+html body #isolate * .package_search_result_table .itt_results {
+    table-layout: fixed;
+}
+
+html body #isolate * .ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    /*-moz-binding: url(data:text/xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%3E%3Cbindings%20xmlns%3D%22http%3A%2F%2Fwww.mozilla.org%2Fxbl%22%20xmlns%3Axbl%3D%22http%3A%2F%2Fwww.mozilla.org%2Fxbl%22%20xmlns%3Axul%3D%22http%3A%2F%2Fwww.mozilla.org%2Fkeymaster%2Fgatekeeper%2Fthere.is.only.xul%22%3E%3Cbinding%20id%3D%22ellipsis%22%3E%3Ccontent%3E%3Cxul%3Awindow%3E%3Cxul%3Adescription%20crop%3D%22end%22%20xbl%3Ainherits%3D%22value%3Dxbl%3Atext%22%3E%3Cchildren%2F%3E%3C%2Fxul%3Adescription%3E%3C%2Fxul%3Awindow%3E%3C%2Fcontent%3E%3C%2Fbinding%3E%3C%2Fbindings%3E#ellipsis);  */
+    /*width: 100%;*/
+}
+
+
+html body #tour_search_module * tbody, .boxy-wrapper tbody {
+    border: 0px solid;
+}
+
+html body #tour_search_module * th, .boxy-wrapper th {
+    text-align: center;
+    line-height: 100%;
+    padding: 0;
+}
+
+html body #tour_search_module * li, .boxy-wrapper li {
+    background: none !important;
+}
+
+tr.itt_odd td, .itt_hike_search_result_table tr.itt_odd td {
+    background: none repeat scroll 0 0 #F1F3F3;
+}
+
+.boxy-inner .ittour_order_block_title_box {
+    background: none;
+    height: 39px;
+    width: 300px;
+}
+
+.ittour_order_block .ittour_order_block_tour_info .ittour_order_block_title_box {
+    float: left;
+    width: 996px;
+    height: 39px;
+}
+
+.ittour_order_block .ittour_order_block_tour_info .itt_order_block_title_box_bg {
+    float: left;
+    width: 996px !important;
+    height: 37px !important;
+}
+
+html body #isolate div.itt_order_block_title_box_bg {
+    -moz-border-radius: 8px 8px 0 0 !important;
+    -webkit-border-radius: 8px 8px 0 0 !important;
+    border-radius: 8px 8px 0 0 !important;
+    ;
+}
+
+/* del when border-radius deployed - start */
+html body #isolate .ittour_order_block .ittour_order_block_title_box .ittour_order_block_title_box_center_corner {
+    float: left;
+    height: 39px;
+    width: 989px;
+    background: url(../images/bg_replace/bg_top_module_right.png) no-repeat right top;
+    padding: 0px 0 0;
+    border-bottom: 1px solid #c2c5d2;
+}
+/* del when border-radius deployed - end */
+
+html body #isolate .ittour_order_block .ittour_order_block_title_box .itt_order_block_title_box_center_corner {
+    float: left;
+    height: 39px;
+    width: 985px;
+    padding: 0px 0 0;
+    border-bottom: 1px solid #c2c5d2;
+}
+
+html body #isolate .it_gradient_right {
+    float: left;
+    height: 39px;
+    width: calc(100% - 7px);
+    width: -webkit-calc(100% - 7px);
+    width: -moz-calc(100% - 7px);
+    background: url(../images/bg_tr_right.png) no-repeat right 1px;
+    border-bottom: 1px solid #c2c5d2;
+    margin: 0 1px 0 -1px;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_title_box .it_gradient_right {
+    float: left;
+    height: 39px;
+    width: 989px;
+    background: url(../images/bg_tr_right.png) no-repeat right 1px;
+    border-bottom: 1px solid #c2c5d2;
+    margin: 0 1px 0 -1px;
+}
+
+.boxy-inner .ittour_order_block_title_box .ittour_order_block_title_box_center_corner {
+    background: url(../images/bg_replace/bg_top_module_right.png) no-repeat right top;
+    float: left;
+    width: 293px;
+    height: 39px;
+}
+
+/* del when border-radius deployed - start */
+html body #isolate .ittour_order_block .ittour_order_block_title_box .ittour_order_block_title_box_center_corner h2 {
+    color: #777a85;
+    float: left !important;
+    font-size: 13px !important;
+    padding: 12px 5px 0 6px !important;
+    width: auto;
+    font-family: Arial;
+    border-left: none !important;
+    background: none !important;
+}
+/* del when border-radius deployed - end */
+
+html body #isolate .ittour_order_block .ittour_order_block_title_box .itt_order_block_title_box_center_corner h2 {
+    color: #777a85;
+    float: left !important;
+    font-size: 13px !important;
+    padding: 12px 5px 0 6px !important;
+    width: auto;
+    font-family: Arial;
+    border-left: none !important;
+    background: none !important;
+}
+
+/* del when border-radius deployed - start */
+html body #isolate .ittour_order_block .ittour_order_block_title_box .ittour_order_block_title_box_center_corner .ittour_order_block_title_box_id_tour strong {
+    color: #777a85;
+    font-size: 13px !important;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_title_box .ittour_order_block_title_box_center_corner .ittour_order_block_title_box_id_tour {
+    padding: 12px 5px 0 0;
+    display: block;
+    font-size: 13px !important;
+    color: #777a85;
+    font-family: Arial;
+    float: left !important;
+}
+/* del when border-radius deployed - end */
+
+html body #isolate .ittour_order_block .ittour_order_block_title_box .itt_order_block_title_box_center_corner .ittour_order_block_title_box_id_tour strong {
+    color: #777a85;
+    font-size: 13px !important;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_title_box .itt_order_block_title_box_center_corner .ittour_order_block_title_box_id_tour {
+    padding: 12px 5px 0 0;
+    display: block;
+    font-size: 13px !important;
+    color: #777a85;
+    font-family: Arial;
+    float: left !important;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_title_box .ittour_order_block_title_box_right_corner {
+    float: left;
+    width: 6px;
+    height: 41px;
+    background: url(../images/bleu_title_corner_right.gif) no-repeat;
+}
+
+.ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box {
+    float: left;
+    width: 994px;
+    padding: 15px 0;
+    display: inline;
+    border-left: 1px solid #c2c5d2;
+    font-family: Arial;
+    border-right: 1px solid #c2c5d2;
+    border-top: 1px solid #c2c5d2;
+    overflow: hidden;
+}
+
+    .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame {
+        width: 657px;
+        float: left;
+    }
+
+        .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price {
+            width: 657px;
+            float: left;
+            padding: 0 0 14px;
+            border-bottom: 1px dotted #c2c5d2;
+        }
+
+            .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_hotel_name {
+                /*	width:450px;
+	float:left;*/
+                overflow: hidden;
+            }
+
+            .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_hotel_name {
+                /*	width: 515px;*/
+                /*	float:left;*/
+            }
+
+                .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_hotel_name h2.ittour_order_hotel {
+                    margin: 0;
+                    padding: 0;
+                    /* float:left; */
+                    width: auto;
+                    border-left: none !important;
+                }
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_hotel_name h2.ittour_order_hotel a {
+    font-size: 21px !important;
+    height: 22px;
+    /* color:#1e8fd9!important;  replace in .\classes\handlers\ittour_external_modules\ittour_modules\css\customer_individual.css */
+    text-decoration: underline;
+    line-height: 18px;
+    display: block;
+    padding: 0 0 3px;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_hotel_name h2.ittour_order_hotel .ittour_thotel {
+    font-size: 21px !important;
+    height: 22px;
+    color: #1e8fd9 !important;
+    line-height: 18px;
+    display: block;
+    font-weight: normal;
+    /*padding:0 0 3px;
+  width: auto;*/
+    /*float: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;*/
+    /*width: 400px;*/
+}
+
+html body #isolate .ittour_hotel_name {
+    /*  float: left;
+  width: 400px;*/
+    height: 22px;
+    line-height: 19px;
+}
+
+.ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_hotel_name h2.ittour_order_hotel a:hover {
+    text-decoration: none;
+}
+
+.ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price ul.stars {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 105px;
+    float: left;
+}
+
+    .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price ul.stars li {
+        margin: 0 2px 0 0;
+        float: left;
+        display: inline;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price ul.stars li a.gold_star,
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel ul.stars li a.gold_star {
+    background: url(../images/ico_gold_star.gif) no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-decoration: none;
+    text-indent: -9999px;
+    position: relative;
+    top: -2px;
+    margin-left: 3px;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price ul.stars li a.white_star {
+    background: url(../images/ico_grey_star.gif) no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-decoration: none;
+    text-indent: -9999px;
+}
+
+.ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_hotel_name .ittour_order_down {
+    /* width: 450px;
+	 float:left;
+        display:inline;*/
+    padding: 5px 0;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_hotel_name .ittour_order_down .ittour_order_city_name_green {
+    font-size: 14px !important;
+    font-weight: bold;
+    color: #1A8900 !important;
+}
+
+.ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price {
+    float: right;
+    text-align: right;
+    padding: 0 5px;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price .ittour_order_strong {
+    font-size: 18px !important;
+    font-weight: bold;
+    color: #1A8900 !important;
+    text-align: right;
+    margin: 0 0 5px;
+    padding: 2px 0;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+    html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price .ittour_order_strong .itt_small_price {
+        border-bottom: 1px dotted #1A8900 !important;
+    }
+
+    html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price .ittour_order_strong .itt_cur_popup {
+        display: none;
+        float: right;
+        padding: 2px 17px 12px;
+        position: absolute;
+        right: 0;
+        background: none repeat scroll 0 0 #F8F9FB;
+        border: 1px solid #C2C5D2;
+        z-index: 9;
+    }
+
+        html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price .ittour_order_strong .itt_cur_popup li {
+            cursor: pointer;
+            list-style: none outside none;
+            padding: 3px 0;
+            text-align: center;
+        }
+
+            html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price .ittour_order_strong .itt_cur_popup li:hover {
+                text-decoration: underline;
+            }
+
+        html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price .ittour_order_strong .itt_cur_popup ul {
+            padding: 0;
+        }
+
+    html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price .ittour_order_strong #main_price_currency_package,
+    html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price .ittour_order_strong #main_price_currency {
+        cursor: pointer;
+    }
+
+    html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price .ittour_order_strong .price_accomodation {
+        color: #1A8900;
+        display: block;
+        font-size: 12px;
+        text-align: center;
+        font-weight: normal;
+        margin-top: 3px;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_hotel_name_tour_price .ittour_order_tour_price .ittour_order_thin {
+    font-size: 13px !important;
+    color: #1A8900 !important;
+    text-align: right;
+    display: block;
+}
+
+html body #isolate #order_desc_stop_price, html body #isolate #order_desc_stop_sale, html body #isolate #order_desc_stop_flight, html body #isolate #order_desc_no_validate {
+    position: absolute;
+    white-space: nowrap;
+    bottom: -20px;
+    right: 0;
+    color: #ef8024 !important;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_sr_price {
+    font-size: 28px !important;
+    color: #1A8900 !important;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_old_price {
+    color: #B8B8B8 !important;
+    padding: 5px;
+    font-size: 24px !important;
+    text-decoration: line-through !important;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_new_price {
+    color: #1A8900 !important;
+    font-size: 28px !important;
+}
+
+.ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info {
+    width: 657px;
+    float: left;
+    padding: 20px 0 0;
+    display: inline;
+}
+
+    .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_left_list {
+        float: left;
+        width: 300px;
+    }
+
+        .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_left_list ul {
+            float: left;
+            width: 300px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+            .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_left_list ul li {
+                float: left;
+                width: 300px;
+                margin: 0 0 11px !important;
+                display: inline;
+                line-height: 19px;
+            }
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_left_list ul li .ittour_order_title, html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_left_list ul li .ittour_order_title label {
+    font-size: 14px !important;
+    color: #010101 !important;
+    width: 140px;
+    float: left;
+    margin: 0;
+    line-height: 14px;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_price_for_two_people b,
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_price_for_two_people {
+    font-size: 14px !important;
+    color: #010101 !important;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_left_list ul li .ittour_order_description {
+    font-size: 14px !important;
+    font-weight: bold;
+    color: #010101 !important;
+    float: left;
+    margin: 0 0 0 10px;
+    display: inline;
+}
+
+    html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_left_list ul li .ittour_order_description .radio {
+        font-size: 14px !important;
+        color: #010101 !important;
+        font-weight: normal;
+    }
+
+        html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_left_list ul li .ittour_order_description .radio .hike_price {
+            font-size: 14px !important;
+            color: #010101 !important;
+            font-weight: bold;
+        }
+
+.ittour_order_right_list ul li span {
+    font-size: 16px
+}
+
+.ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_left_list ul li .ittour_order_thin_font {
+    font-weight: normal;
+}
+
+.ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_right_list {
+    float: left;
+    width: 300px;
+}
+
+    .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_right_list ul {
+        float: left;
+        width: 300px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_right_list ul li {
+            float: left;
+            width: 300px;
+            margin: 0 0 11px;
+            display: inline;
+            line-height: 19px;
+        }
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_right_list ul li .ittour_order_title, html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_right_list ul li .ittour_order_title label {
+    font-size: 14px !important;
+    color: #010101 !important;
+    width: 95px;
+    float: left;
+    margin: 0;
+    line-height: 14px;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_right_list ul li .ittour_order_description {
+    font-size: 14px !important;
+    font-weight: bold;
+    color: #010101 !important;
+    float: left;
+    margin: 0 0 0 10px;
+    display: inline;
+}
+
+    html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_right_list ul li .ittour_order_description div.it_trasport_it {
+        width: 25px;
+        height: 25px;
+        background-repeat: no-repeat;
+        position: relative;
+        top: -5px;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_left_frame .ittour_order_tour_info .ittour_order_right_list ul li .ittour_order_thin_font {
+    font-weight: normal;
+    color: #010101 !important;
+    font-size: 14px !important;
+}
+
+.ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_right_frame {
+    width: 300px;
+    float: right;
+    margin: 0 4px 0 0;
+    display: inline;
+    /*	position: relative;
+	overflow:hidden;*/
+}
+
+    .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_right_frame .ittour_order_block_content_box_right_frame_rounde {
+        width: 302px;
+        height: 213px;
+    }
+
+    .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_right_frame .ittour_order_rounded_image {
+        width: 302px;
+        height: 212px;
+        z-index: 10;
+        position: relative;
+    }
+
+    * + html .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_right_frame .ittour_order_rounded_image {
+        position: static;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_right_frame .ittour_order_block_content_box_filter {
+    background: url(../images/image_filter.png) no-repeat;
+    z-index: 30;
+    position: relative;
+    width: 302px;
+    height: 222px;
+    margin: -222px 0 0;
+    display: block;
+    /*for task #630*/
+    cursor: pointer;
+}
+
+* + html .ittour_order_block .ittour_order_block_tour_info .ittour_order_block_content_box .ittour_order_block_content_box_right_frame .ittour_order_block_content_box_filter {
+    position: static;
+}
+
+.ittour_order_block .ittour_order_block_transport_info {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+    .ittour_order_block .ittour_order_block_transport_info table {
+        width: 976px !important;
+        margin: 0 auto !important;
+    }
+
+        .ittour_order_block .ittour_order_block_transport_info table .first_cell {
+        }
+
+html body #isolate .ittour_order_block .ittour_order_block_transport_info table .first_cell th {
+    background: url(../images/table_top_center_corner.gif) repeat-x;
+    height: 35px;
+    color: #000 !important;
+    font-size: 12px !important;
+}
+
+    html body #isolate .ittour_order_block .ittour_order_block_transport_info table .first_cell th.left_corner {
+        background: url(../images/table_top_left_corner.gif) no-repeat;
+        width: 6px;
+        height: 35px;
+    }
+
+    html body #isolate .ittour_order_block .ittour_order_block_transport_info table .first_cell th.right_corner {
+        background: url(../images/table_top_right_corner.gif) no-repeat;
+        width: 6px;
+        height: 35px;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_block_transport_info table .last_cell td {
+    background: url(../images/table_bottom_center_corner.gif) repeat-x;
+    height: 36px;
+}
+
+    html body #isolate .ittour_order_block .ittour_order_block_transport_info table .last_cell td.left_corner {
+        background: url(../images/table_bottom_left_corner.gif) no-repeat;
+        width: 6px;
+        height: 36px !important;
+    }
+
+    html body #isolate .ittour_order_block .ittour_order_block_transport_info table .last_cell td.right_corner {
+        background: url(../images/table_bottom_right_corner.gif) no-repeat;
+        width: 6px;
+        height: 36px;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_block_transport_info table td {
+    border-top: 1px dotted #c2c5d2 !important;
+    color: #000 !important;
+    text-align: center;
+    font-size: 12px !important;
+}
+
+    html body #isolate .ittour_order_block .ittour_order_block_transport_info table td.left_corner {
+        background: url(../images/table_center_left_corner.gif) no-repeat;
+        width: 6px !important;
+        height: 34px !important;
+    }
+
+    html body #isolate .ittour_order_block .ittour_order_block_transport_info table td.right_corner {
+        background: url(../images/table_center_right_corner.gif) no-repeat;
+        width: 6px;
+        height: 34px;
+    }
+
+/*html body #isolate .itt_main_block .ittour_order_block .ittour_order_block_content_box .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_frame{
+	float: left;
+  width: 100%;
+  overflow:hidden;
+  margin:0 5px 0 0;
+  color: #000 !important;
+  font-size:14px!important;
+}*/
+
+
+.ittour_order_block .ittour_order_left_frame {
+    float: left;
+    width: 638px;
+    overflow: hidden;
+    margin: 0 5px 0 0;
+}
+
+    .ittour_order_block .ittour_order_left_frame .ittour_order_hotel_name {
+        width: 450px;
+        float: left;
+    }
+
+    .ittour_order_block .ittour_order_left_frame .ittour_order_hotel_name {
+        width: 638px;
+        float: left;
+    }
+
+        .ittour_order_block .ittour_order_left_frame .ittour_order_hotel_name h2.ittour_order_hotel {
+            margin: 0;
+            padding: 0 0 2px;
+            float: left;
+            width: auto;
+            border-left: none !important;
+        }
+
+html body #isolate .ittour_order_block .ittour_order_left_frame .ittour_order_hotel_name h2.ittour_order_hotel a {
+    font-size: 21px !important;
+    height: 22px;
+    color: #1e8fd9 !important;
+    text-decoration: underline;
+    line-height: 18px;
+    display: block;
+    padding: 0 0 3px;
+}
+
+html body #isolate .ittour_order_block .ittour_order_left_frame .ittour_order_hotel_name h2.ittour_order_hotel .ittour_thotel {
+    font-size: 21px !important;
+    height: 22px;
+    color: #1e8fd9 !important;
+    line-height: 18px;
+    display: block;
+    padding: 0 0 3px;
+}
+
+.ittour_order_block .ittour_order_left_frame .ittour_order_hotel_name h2.ittour_order_hotel a:hover {
+    text-decoration: none;
+}
+
+.ittour_order_block .ittour_order_left_frame .ittour_order_tour_price ul.stars {
+    margin: 0;
+    padding: 0 0 0 10px;
+    list-style: none;
+    width: 140px;
+    float: left;
+}
+
+    .ittour_order_block .ittour_order_left_frame .ittour_order_tour_price ul.stars li {
+        margin: 0 2px 0 0;
+        float: left;
+        display: inline;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_left_frame .ittour_order_tour_price ul.stars li a.gold_star {
+    background: url(../images/ico_gold_star.gif) no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-decoration: none;
+    text-indent: -9999px;
+}
+
+html body #isolate .ittour_order_block .itt_wrap_stars_price {
+    zoom: 1;
+}
+
+    html body #isolate .ittour_order_block .itt_wrap_stars_price:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_left_frame .ittour_order_tour_price ul.stars li a.white_star {
+    background: url(../images/ico_grey_star.gif) no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-decoration: none;
+    text-indent: -9999px;
+}
+
+.ittour_order_block .ittour_order_left_frame .ittour_order_hotel_name .ittour_order_down {
+    width: 638px;
+    float: left;
+    padding: 5px 0;
+    display: inline;
+}
+
+html body #isolate .ittour_order_block .ittour_order_left_frame .ittour_order_hotel_name .ittour_order_down .ittour_order_city_name_green {
+    font-size: 14px !important;
+    font-weight: bold;
+    color: #1a8900 !important;
+}
+
+html body #isolate .ittour_order_block #main_price {
+    font-size: 18px !important;
+    font-weight: bold;
+    color: #1a8900 !important;
+}
+
+.ittour_order_block .ittour_order_left_frame .ittour_order_hotel_name_tour_price {
+    width: 638px;
+    float: left;
+    padding: 0 0 14px;
+    border-bottom: 1px dotted #c2c5d2;
+}
+
+
+.ittour_order_block .ittour_order_right_frame {
+    display: inline;
+    float: right;
+    width: 305px;
+    overflow: hidden;
+}
+
+.ittour_order_block .ittour_order_block_hotel_info {
+    padding: 0 4px;
+    width: 986px;
+    margin-bottom: 30px;
+}
+
+    .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box {
+        display: inline;
+        float: left;
+        padding: 8px;
+        width: 968px;
+        overflow: auto;
+        height: 344px;
+        margin: 0 auto;
+    }
+
+        .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_grey_box_list {
+            float: left;
+            width: 638px;
+            padding: 0px 0 10px;
+            display: inline;
+            overflow: hidden;
+        }
+
+html body #isolate .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_grey_box_list .ittour_order_grey_box_list_top {
+    background: url("../images/top_grey_list_block.gif") no-repeat;
+    float: left;
+    height: 6px;
+    width: 638px;
+    overflow: hidden;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_grey_box_list .ittour_order_grey_box_list_center {
+    background: url("../images/center_grey_list_block.gif") repeat-y;
+    float: left;
+    padding: 8px 15px 10px;
+    width: 608px;
+}
+
+.ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_grey_box_list .ittour_order_grey_box_list_center ul {
+    float: left;
+    width: 638px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_grey_box_list .ittour_order_grey_box_list_center ul li {
+    display: inline;
+    float: left;
+    margin: 0 20px 15px 0;
+    padding: 0 0 0 22px;
+    width: 169px;
+    background: url(../images/ico_circle.gif) no-repeat 0 8px !important;
+}
+
+    html body #isolate .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_grey_box_list .ittour_order_grey_box_list_center ul li a {
+        font-size: 14px !important;
+        color: #004c92 !important;
+        text-decoration: underline;
+    }
+
+.ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_grey_box_list .ittour_order_grey_box_list_center ul li a:hover {
+    text-decoration: none;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_grey_box_list .ittour_order_grey_box_list_bottom {
+    background: url("../images/bottom_grey_list_block.gif") no-repeat;
+    float: left;
+    height: 6px;
+    width: 638px;
+}
+
+.ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description {
+    float: left;
+    width: 638px;
+    padding: 15px 0;
+    display: inline;
+    border-top: 1px dotted #c2c5d2;
+}
+
+.ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description2 {
+    /*height: 175px;
+  overflow: hidden;*/
+}
+
+    .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description2 .text-block-content li {
+        display: block;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description_shadow {
+    background: url("../images/bg_modul.png") repeat-x scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    height: 30px;
+    margin: -28px 0 0 0;
+    padding: 0;
+    position: relative;
+    width: 640px;
+    z-index: 300;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description h2 {
+    margin: 0;
+    padding: 5px 0;
+    color: #1E8FD9 !important;
+    font-size: 17px !important;
+    float: left;
+    width: 638px;
+    display: inline;
+    border-left: none !important;
+}
+
+.ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description .text-block-title {
+    float: left;
+    width: 100%;
+}
+
+    .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description .text-block-title .left-grey-corner {
+        display: none;
+    }
+
+    .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description .text-block-title .center-grey-corner {
+        float: left;
+    }
+
+    .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description .text-block-title .right-grey-corner {
+        display: none;
+    }
+
+
+
+.ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description .text-block-content {
+}
+
+    .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description .text-block-content ul {
+        margin: 0;
+        padding: 5px 0 5px 0px;
+        float: left;
+        width: 630px;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description .text-block-content ul li {
+    margin: 0 0 5px;
+    display: inline;
+    float: left;
+    width: 630px;
+    color: #000 !important;
+    font-size: 14px !important;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description p {
+    margin: 0 0 5px;
+    font-size: 14px !important;
+    line-height: 21px;
+    color: #000 !important;
+}
+
+.ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description p.ittour_order_more_block {
+    display: block;
+    margin-top: 8px;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description p a.ittour_order_more {
+    color: #004c92 !important;
+    text-decoration: underline;
+}
+
+.ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_hotel_description p a.ittour_order_more:hover {
+    text-decoration: none;
+}
+
+.ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_image a.ittour_order_center_link {
+    text-align: center;
+    font-size: 12px !important;
+    color: #004c92 !important;
+}
+
+.ittour_order_block .ittour_order_meteo_box {
+    text-align: center;
+    padding: 0px 0;
+    float: left;
+    width: 302px;
+}
+
+    .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_title {
+        padding: 0 0 5px;
+        float: left;
+        width: 302px;
+        text-align: center;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_title span.ittour_order_title {
+    text-align: center;
+    font-size: 14px !important;
+    font-weight: bold;
+    color: #1e8fd9 !important;
+    font-family: Arial;
+}
+
+.ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey {
+    float: left;
+    width: 302px;
+}
+
+html body #isolate .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_top {
+    float: left;
+    width: 302px;
+    height: 7px;
+    background: url(../images/top_meteo_box.gif) no-repeat;
+    font-size: 2px !important;
+}
+
+html body #isolate .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_center {
+    float: left;
+    width: 302px;
+    background: url(../images/center_meteo_box.gif) repeat-y;
+}
+
+.ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_center ul {
+    float: left;
+    width: 302px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_center ul li {
+        float: left;
+        width: 302px;
+        display: inline;
+        margin: 0 0 2px;
+        padding: 4px 0;
+        border-bottom: 1px dotted #c2c5d2;
+    }
+
+        .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_center ul li.last {
+            border-bottom: none;
+            margin: 0;
+        }
+
+        .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_center ul li .ittour_order_ico {
+            float: left;
+            margin: 0 0 0 8px;
+            display: inline;
+        }
+
+            .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_center ul li .ittour_order_ico img {
+                width: 32px;
+                height: 32px;
+                display: block;
+            }
+
+html body #isolate .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_center ul li .ittour_order_date {
+    float: left;
+    font-size: 12px !important;
+    line-height: 19px;
+    color: #000 !important;
+    padding: 5px 0 0 8px;
+    display: inline;
+}
+
+html body #isolate .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_center ul li .ittour_order_night {
+    float: left;
+    font-size: 12px !important;
+    line-height: 19px;
+    color: #000 !important;
+    padding: 5px 0 0 12px;
+    display: inline;
+}
+
+    html body #isolate .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_center ul li .ittour_order_night .ittour_order_bleu_strong {
+        font-size: 14px !important;
+        font-weight: bold;
+        color: #004c92 !important;
+    }
+
+    html body #isolate .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_center ul li .ittour_order_night .ittour_order_bleu {
+        font-size: 12px !important;
+        color: #004c92 !important;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_center ul li .ittour_order_day {
+    float: left;
+    font-size: 12px !important;
+    line-height: 19px;
+    color: #000 !important;
+    padding: 5px 0 0 12px;
+    display: inline;
+}
+
+    html body #isolate .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_center ul li .ittour_order_day .ittour_order_bleu_strong {
+        font-size: 14px !important;
+        font-weight: bold;
+        color: #1e8fd9 !important;
+    }
+
+    html body #isolate .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_center ul li .ittour_order_day .ittour_order_bleu {
+        font-size: 12px !important;
+        color: #1e8fd9 !important;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_box_grey .ittour_order_meteo_box_bottom {
+    float: left;
+    width: 302px;
+    height: 7px;
+    background: url(../images/bottom_meteo_box.gif) no-repeat;
+}
+
+.ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_more_info {
+    padding: 5px 0;
+    float: left;
+    width: 302px;
+    text-align: center;
+}
+
+html body #isolate .ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_more_info a.ittour_order_more_info {
+    text-align: center;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 12px !important;
+    color: #004c92 !important;
+}
+
+.ittour_order_block .ittour_order_meteo_box .ittour_order_meteo_more_info a.ittour_order_more_info:hover {
+    text-decoration: none;
+}
+
+.ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_image .ittour_order_block_content_box_right_frame_rounde {
+    width: 302px;
+    height: 220px; /*stomilkin*/
+    float: left; /*stomilkin*/
+}
+
+.ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_image .ittour_order_rounded_image {
+    width: 302px;
+    height: 212px;
+    z-index: 10;
+    position: relative;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_image .ittour_order_block_content_box_filter {
+    background: url(../images/image_filter.png) no-repeat;
+    z-index: 30;
+    position: relative;
+    width: 302px;
+    height: 222px;
+    margin: -222px 0 0;
+    display: block;
+}
+
+
+* + html .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_image .ittour_order_rounded_image {
+    position: static;
+}
+
+* + html .ittour_order_block .ittour_order_block_hotel_info .ittour_order_block_content_box .ittour_order_image .ittour_order_block_content_box_filter {
+    position: static;
+}
+
+
+
+
+
+.ittour_order_block .ittour_order_block_customer_info {
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 974px;
+}
+
+    .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form {
+        float: left;
+        width: 638px;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_top {
+    background: url(../images/top_grey_form_box.gif) no-repeat;
+    width: 638px;
+    height: 7px;
+    float: left;
+    overflow: hidden;
+}
+
+.ittour_order_meteo_box_top {
+    overflow: hidden;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center {
+    background: url(../images/center_grey_form_box.gif) repeat-y;
+    width: 100%;
+    float: left;
+    padding: 8px 0 0 0;
+}
+
+/*
+.itt_main_block.boxy-content{
+  width:995px!important;
+}
+*/
+
+.ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_left {
+    float: left;
+    width: 295px;
+    overflow: hidden;
+    margin: 0 0 0 12px;
+}
+
+    .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_left ul {
+        float: left;
+        width: 300px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_left ul li {
+            float: left;
+            width: 300px;
+            margin: 0 0 10px;
+            display: inline;
+            padding: 0;
+        }
+
+html body #isolate .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_left ul li input {
+    color: #5E6266 !important;
+    display: block;
+    float: left;
+    font-size: 12px !important;
+    height: 15px !important;
+    padding: 0px 0px 0px 8px !important;
+    width: 285px !important;
+    background-color: #fff !important;
+    /*line-height: 19px !important;  */
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_left ul li .ittour_order_enter_captcha {
+    float: left;
+    font-size: 14px !important;
+    color: #000 !important;
+    padding: 3px 0;
+}
+
+.ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_left ul li input.ittour_order_input_captcha {
+    float: right;
+    /* height: 15px !important;*/
+    width: 100px !important;
+    padding: 3px 5px !important;
+    margin: 0 8px 0 5px !important;
+    display: inline;
+}
+
+.ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_right {
+    float: right;
+    width: 300px;
+    display: inline;
+    margin: 0 12px 0 0;
+}
+
+.ittour_order_grey_form_center_right textarea {
+    background: #fff;
+}
+
+.ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_right ul {
+    float: left;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_right ul li {
+        float: left;
+        width: 300px;
+        margin: 0 0 10px;
+        display: inline;
+        padding: 0;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_right ul li .ittour_order_comment_title {
+    font-size: 12px !important;
+    color: #000 !important;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_right ul li textarea {
+    width: 265px !important;
+    height: 145px;
+    float: left;
+    background: #fff;
+    font-size: 12px !important;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_right ul li a.ittour_order_captcha_image {
+    background: url(../images/bg_captcha.gif) no-repeat;
+    display: inline;
+    float: left;
+    height: 40px !important;
+    padding: 10px 0 0 22px !important;
+    width: 129px;
+}
+
+    html body #isolate .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_right ul li a.ittour_order_captcha_image img {
+        width: 100px;
+        height: 23px;
+        display: block;
+        border: none;
+    }
+
+html body #isolate .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_right ul li a.ittour_order_btn_send {
+    background: url(../images/btn_send_green.gif) no-repeat;
+    width: 149px;
+    height: 47px !important;
+    text-decoration: none;
+    text-indent: -9999px;
+    display: block;
+    float: right;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_center .ittour_order_grey_form_center_right ul li a.ittour_order_btn_send_ukr {
+    background: url(../images/btn_send_green_ukr.gif) no-repeat;
+    width: 149px;
+    height: 47px !important;
+    text-decoration: none;
+    text-indent: -9999px;
+    display: block;
+    float: right;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_customer_info .ittour_order_grey_form .ittour_order_grey_form_bottom {
+    background: url(../images/bottom_grey_form_box.gif) no-repeat 0 bottom;
+    width: 638px;
+    height: 4px;
+    float: left;
+    overflow: hidden;
+    font-size: 1px;
+}
+
+.ittour_order_block .ittour_order_block_customer_info .ittour_order_block_content_box .ittour_order_right_frame .ittour_order_center_text {
+    text-align: center;
+    width: 100%;
+}
+
+html body #isolate .ittour_order_block .ittour_order_block_customer_info .ittour_order_block_content_box .ittour_order_right_frame .ittour_order_center_text p {
+    margin: 0 0 5px;
+    font-size: 12px !important;
+    line-height: 23px;
+    color: #000 !important;
+}
+
+.ittour_order_block .ittour_order_block_customer_info .ittour_order_block_content_box .ittour_order_right_frame .ittour_order_center_text p.ittour_order_center_thin {
+    font-weight: normal;
+}
+
+.ittour_order_block .ittour_order_block_customer_info .ittour_order_block_content_box .ittour_order_right_frame .ittour_order_center_text p.ittour_order_center_strong {
+    font-weight: bold;
+    margin: 15px 0 0;
+}
+
+.ittour_price_for_two_people {
+    float: left;
+    padding: 5px 0 0;
+    font-size: 14px !important;
+}
+
+.ittour_order_up_btn {
+    text-align: center;
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    background: url(../images/arrow_top_hover.png) no-repeat;
+    background-position: center center;
+    text-decoration: none;
+    text-indent: -9999px;
+}
+
+.ittour_order_down_btn {
+    text-align: center;
+    background: url(../images/arrow_bottom_hover.png) no-repeat;
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    background-position: center center;
+    text-decoration: none;
+    text-indent: -9999px;
+}
+
+.ittour_hidden {
+    visibility: hidden;
+}
+
+.ittour_order_grey_form_center_left input {
+    background-color: #fff !important;
+}
+
+.extended_package_search_form div {
+    margin: 0;
+    overflow: visible !important;
+}
+
+#isolate .stars li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#isolate .ittour_order_tour_info li {
+    padding: 0;
+    line-height: 15px;
+    height: 19px;
+}
+
+html body #isolated .title-bar * {
+    color: #fff !important;
+}
+
+.it_close {
+    font: normal 13px Arial;
+    color: #777a85;
+    display: block;
+    float: right;
+    padding: 12px 0 0 0;
+    cursor: pointer;
+    width: 86px;
+    /*height: 39px;*/
+}
+
+    .it_close img {
+        float: right;
+        /*float:none;*/
+        margin: -5px 0 0 0;
+        /*margin: -5px 0 -10px;*/
+        padding: 0 5px 0 0;
+    }
+
+.ittour_order_block_title_box_left_corner {
+    float: left;
+    width: 7px;
+    height: 39px;
+    background: url(../images/bg_replace/bg_top_module_left.png) no-repeat;
+    /*border-bottom: 1px solid #c2c5d2;*/
+}
+
+.itt_order_block_title_box_left_corner {
+    float: left;
+    width: 7px;
+    height: 39px;
+}
+
+.it_gradient_left {
+    float: left;
+    width: 5px;
+    height: 39px;
+    background: url(../images/bg_tr_left.png) no-repeat left 1px;
+    margin-left: 1px;
+    border-bottom: 1px solid #c2c5d2;
+}
+
+.ittour_order_block_title_box_center_corner_next {
+    float: left;
+    height: 39px;
+    width: 979px;
+    background: url(../images/bg_replace/bg_top_module_right.png) no-repeat right top;
+    padding: 0px 0 0;
+    border-bottom: 1px solid #c2c5d2;
+}
+
+.itt_order_block_title_box_center_corner_next {
+    float: left;
+    height: 39px;
+    width: 978px;
+    padding: 0px 0 0;
+    border-bottom: 1px solid #c2c5d2;
+}
+
+.it_gradient_right_next {
+    float: left;
+    height: 39px;
+    width: 979px;
+    background: url(../images/bg_tr_right.png) no-repeat right 1px;
+    padding: 0px 0 0;
+    border-bottom: 1px solid #c2c5d2;
+    margin: 0 1px 0 -1px;
+}
+
+.ittour_order_block_title_box_center_corner_next h2,
+.itt_order_block_title_box_center_corner_next h2 {
+    color: #777a85;
+    float: left !important;
+    font-size: 17px !important;
+    margin: 0;
+    padding: 10px 5px 0 6px !important;
+    display: inline;
+    width: auto;
+    font-weight: bold;
+    font-family: Arial;
+    border-left: none !important;
+    background: none !important;
+}
+
+.it_bg_bottom_box {
+    width: 984px;
+    margin-left: 1px;
+    border-bottom: 1px solid #000000;
+}
+
+.it_box_padding {
+    padding: 0 10px;
+}
+
+.it_hiden_info {
+    color: #1e8fd9;
+    font-size: 14px;
+    line-height: 28px;
+    /*display: block;*/
+}
+
+.ittour_order_block .ittour_order_right_frame_text {
+    display: inline;
+    float: right;
+    width: 325px;
+    overflow: hidden;
+}
+
+    .ittour_order_block .ittour_order_right_frame_text .ittour_order_center_text p {
+        font: normal 12px/30px Arial;
+        text-align: center;
+    }
+
+        .ittour_order_block .ittour_order_right_frame_text .ittour_order_center_text p.ittour_order_center_strong {
+            font-weight: bold !important;
+            padding: 30px 0 0 0 !important;
+            font-size: 14px !important;
+        }
+
+.it_main_bottom_it {
+    height: 16px !important;
+    width: 996px !important;
+    color: #9699A3 !important;
+    font-size: 10px !important;
+    line-height: 15px !important;
+    text-align: right !important;
+    margin-left: 5px !important;
+}
+
+    .it_main_bottom_it > span {
+        margin-right: 5px !important;
+    }
+
+/* Для удаления генерируемых картинок из вёрстки */
+.it_main_bottom_itt {
+    height: 16px !important;
+    width: 994px !important;
+    color: #9699A3 !important;
+    font-size: 10px !important;
+    line-height: 15px !important;
+    text-align: right !important;
+    margin-left: 5px !important;
+}
+
+    .it_main_bottom_itt > span {
+        margin-right: 5px !important;
+    }
+
+/* Дефолтные стили, без преобразованых картинок */
+.it_bg_left_bottom_it {
+    background: url(../images/bg_replace/bg_bottom_module_left.png) no-repeat 0 0 !important;
+    width: 7px;
+    height: 16px;
+    float: left;
+}
+
+.it_bg_right_bottom_it {
+    background: url(../images/bg_replace/bg_bottom_module_right.png) no-repeat right 0 !important;
+    width: 984px;
+    height: 16px;
+    float: left;
+    color: #9699A3 !important;
+    font-size: 10px !important;
+    line-height: 16px;
+    padding: 0 5px 0 0;
+    text-align: right;
+}
+
+.it_name_form {
+    font-weight: bold;
+    margin-bottom: 12px !important;
+}
+
+.title-bar {
+    display: none;
+}
+
+html body #isolated * .boxy-inner {
+    background: none !important;
+    border: none !important;
+}
+
+.ittour_order_block_content_box {
+    background: #fff !important;
+}
+
+.tour_order {
+    height: auto !important;
+    width: auto !important;
+    overflow: none !important;
+}
+
+#tour_order_success_message .message {
+    background: #fff;
+    width: 974px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+    padding: 10px;
+    clear: both;
+}
+
+#itt_hidden_operator {
+    float: left;
+    padding: 12px 0 0 0;
+    color: #777A85;
+    font-size: 13px
+}
+
+html body #isolate * .itt_currency_popap_currency {
+    font-weight: bold !important;
+    border-bottom: 1px dotted;
+}
+
+html body #isolate * .itt_show_currency_popap {
+    text-decoration: none;
+}
+
+html body #isolate * .itt_currency_popap {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #555555;
+    position: absolute;
+    width: 30px;
+    display: none;
+    margin-top: 4px;
+    border-top: none;
+    width: 30px;
+    right: 0;
+}
+
+    /*html body #isolate * .itt_hike_search_result_table .itt_currency_popap {
+    margin-top: 7px;
+}*/
+    html body #isolate * .itt_currency_popap ul {
+        padding: 3px 5px;
+    }
+
+    html body #isolate * .itt_currency_popap li {
+        list-style: none outside none;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 3px 0;
+    }
+
+        html body #isolate * .itt_currency_popap li.itt_active_currency {
+            display: none;
+        }
+
+        html body #isolate * .itt_currency_popap li:hover {
+            text-decoration: underline;
+        }
+
+
+/* search result table */
+html body #isolate * .itt_results_status_alt {
+    float: none;
+}
+
+    html body #isolate * .itt_results_status_alt:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    html body #isolate * .itt_results_status_alt .itt_crumbs {
+        margin: 0 0 0 15px;
+    }
+
+        html body #isolate * .itt_results_status_alt .itt_crumbs ul {
+            padding: 0 0 0 61px;
+        }
+
+            html body #isolate * .itt_results_status_alt .itt_crumbs ul li {
+                display: inline-block;
+                vertical-align: top;
+                white-space: nowrap;
+                margin-bottom: 2px;
+            }
+
+* + html body #isolate * .itt_results_status_alt .itt_crumbs ul li {
+    display: inline;
+}
+
+html body #isolate * .itt_results_status_alt .itt_crumbs ul li.itt_first {
+    margin: 0 0 0 -64px;
+}
+
+#isolate .package_search_result_table .itt_result_basket {
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin: -5px 1% 2px 2px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(../images/icon_cart.png) no-repeat;
+}
+
+#isolate .package_search_result_table .itt_results_alt strong {
+    font-weight: bold;
+}
+
+#isolate .package_search_result_table .itt_results_alt {
+    width: 100% !important;
+    padding: 0 0 15px !important;
+    float: left;
+    list-style: none;
+    color: #1d1d1d;
+    font: 12px/15px Arial, Helvetica, sans-serif;
+    border-top: 1px solid #2763b9;
+    margin-top: 4px;
+}
+
+    #isolate .package_search_result_table .itt_results_alt > li {
+        overflow: hidden;
+        padding: 18px 0;
+        border-bottom: 2px dotted #c1c5d1;
+    }
+
+    #isolate .package_search_result_table .itt_results_alt .itt_tour_visual {
+        float: left;
+        padding: 2px;
+        margin: 15px 12px 0 5px;
+        border: 1px solid #d6d8e4;
+    }
+
+    #isolate .package_search_result_table .itt_results_alt .itt_tour_visual_holder {
+        display: block;
+        width: 96px;
+        max-height: 68px;
+        overflow: hidden;
+    }
+
+    #isolate .package_search_result_table .itt_results_alt .itt_tour_visual img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+#isolate .package_search_result_table .itt_info_holder {
+    overflow: hidden;
+}
+
+#isolate .package_search_result_table .title-row,
+#isolate .package_search_result_table .itt_main_block {
+    overflow: hidden;
+}
+
+
+
+#isolate .package_search_result_table .itt_price_area {
+    float: right;
+    width: 31%;
+    margin: 0 0 0 1%;
+}
+
+#isolate .package_search_result_table .itt_price_line {
+    font-size: 20px;
+    line-height: 22px;
+    color: #198901;
+    text-align: right;
+    padding: 2px 0 4px 8px;
+    overflow: hidden;
+}
+
+    #isolate .package_search_result_table .itt_price_line .itt_price {
+        font-size: 28px;
+        line-height: 24px;
+        border-bottom: 3px dotted #1b8902;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #isolate .package_search_result_table .itt_price_line .itt_price_alt {
+        font-size: 14px;
+        line-height: 16px;
+        color: #747474 !important;
+        white-space: nowrap;
+    }
+
+#isolate .package_search_result_table .itt_price_area .itt_price_area_row {
+    padding: 0 0 1px 17%;
+    text-align: right;
+    color: #000;
+}
+
+    #isolate .package_search_result_table .itt_price_area .itt_price_area_row .itt_price_more {
+        display: inline-block;
+        vertical-align: top;
+        /*	color:#1b8902;*/
+        text-decoration: none;
+        border-bottom: 1px dotted #1b8902;
+        margin: 0 0 1px 35%;
+    }
+
+        #isolate .package_search_result_table .itt_price_area .itt_price_area_row .itt_price_more:hover {
+            border-color: transparent;
+        }
+
+#isolate .package_search_result_table .itt_price_area .itt_add_to_basket {
+    padding: 0 0 0 12px;
+    font-size: 11px;
+    text-decoration: none;
+    float: left;
+    margin-top: 6px;
+    /*	color:#136aa0;*/
+    background: url(../images/bg-plus.png) no-repeat 0 50%;
+}
+
+#isolate .package_search_result_table .itt_price_area .itt_add_to_basket_to_del {
+    padding: 0 0 0 12px;
+    font-size: 11px;
+    text-decoration: none;
+    background: url(../images/bg-minus.png) no-repeat 0 50%;
+}
+
+    #isolate .package_search_result_table .itt_price_area .itt_add_to_basket_to_del .itt_del_to_basket {
+        color: #d01919 !important;
+    }
+
+    #isolate .package_search_result_table .itt_price_area .itt_add_to_basket_to_del span {
+        border-bottom: 1px dotted #d01919;
+    }
+
+    #isolate .package_search_result_table .itt_price_area .itt_add_to_basket:hover span,
+    #isolate .package_search_result_table .itt_price_area .itt_add_to_basket_to_del:hover span {
+        border-bottom: none !important;
+    }
+
+#isolate .package_search_result_table .itt_results_info {
+    overflow: hidden;
+}
+
+#isolate .package_search_result_table .title-row h2 {
+    font: bold 16px/22px Arial, Helvetica, sans-serif;
+    color: #1e8fdb;
+    float: left;
+}
+
+    #isolate .package_search_result_table .title-row h2 a {
+        float: left;
+        max-width: 300px;
+        font-weight: bold;
+        /*	color:#1e8fdb;*/
+    }
+
+        #isolate .package_search_result_table .title-row h2 a:hover {
+            text-decoration: none;
+        }
+
+
+#isolate .package_search_result_table .title-row .itt_stars {
+    float: left;
+    padding: 0 15px 0 4px;
+    background: url(../images/hottel-star.png) no-repeat 100% 0;
+    font-weight: bold;
+}
+
+#isolate .package_search_result_table .itt_results_info h3 {
+    margin: 0 0 6px;
+    width: 80%;
+    font-weight: bold;
+    font: 13px/16px Arial, Helvetica, sans-serif;
+    /*	color:#1d8957;*/
+}
+
+#isolate .package_search_result_table .itt_results_alt .itt_results_detail {
+    list-style: none;
+    padding: 0;
+    min-width: 324px;
+}
+
+* + html #isolate .package_search_result_table .itt_results_alt .itt_results_detail {
+    min-width: 1px;
+}
+
+    #isolate .package_search_result_table .itt_results_alt .itt_results_detail li {
+        display: inline-block;
+        min-width: 161px;
+        overflow: hidden;
+        padding: 0 0 4px;
+        vertical-align: top;
+        width: 48%;
+    }
+
+    * + html #isolate .package_search_result_table .itt_results_alt .itt_results_detail li {
+        display: inline;
+    }
+
+    #isolate .package_search_result_table .itt_results_alt .itt_results_detail .itt_title {
+        float: left;
+        width: 54px;
+        padding: 0 1px 0 0;
+        color: #6f727b !important;
+    }
+
+        #isolate .package_search_result_table .itt_results_alt .itt_results_detail .itt_title.ukr {
+            width: 72px;
+        }
+
+    #isolate .package_search_result_table .itt_results_alt .itt_results_detail .itt_txt-line {
+        overflow: hidden;
+        display: block;
+        padding: 0 4px 0 0;
+    }
+
+.package_search_result_table .itt_title {
+    float: inherit;
+}
+
+/* add fro task #630 */
+#gallery_big_img_tour div.next, #gallery_big_img_tour div.prev {
+    color: #FFFFFF;
+    font-size: 35px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 20px 10px 20px;
+    cursor: pointer;
+    background: #717171;
+    border: 1px solid #B1B1B1;
+    text-align: center;
+    float: right;
+}
+
+#close_gallery_big_img_tour {
+    background: url(../images/it_close.png) no-repeat; /* #EEE; */
+    width: 28px;
+    height: 28px;
+    top: 0px;
+    right: 0px;
+    display: block;
+    text-decoration: none;
+    text-indent: -9999px;
+    position: absolute;
+    font-size: 90%;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.gallery_big_img_tour_item {
+    min-height: 550px;
+    min-width: 800px;
+    max-width: 800px;
+}
+
+#gallery_big_img_tour, #gallery_big_img_tour .next, #gallery_big_img_tour .prev {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ittour_order_block_content_box_right_frame_rounde span.ittour_order_block_content_box_filter {
+    cursor: pointer;
+}
+
+html body #isolate * tr.border-top-red {
+    border-top: 1px solid red;
+}
+
+html body .fl {
+    float: left;
+}
+
+html body .number_stars {
+    color: #0820FF !important;
+    font-size: 21px;
+    text-decoration: none;
+    background: none;
+    height: 23px;
+}
+
+html body #tour_search_module *, html body #isolate * .number_stars {
+    color: #0820FF !important;
+}
+
+html body #tour_search_module *,
+html body #showcase_module *,
+html body #showcase_day_showcase_module *,
+html body #showcase_country_showcase_module *,
+html body #showcase_hike_showcase_module *,
+html body #isolated * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+    html body #tour_search_module * select, html body #tour_search_module * input,
+    html body #showcase_module * select, html body #showcase_module * input,
+    html body #showcase_day_showcase_module * select, html body #showcase_day_showcase_module * input,
+    html body #showcase_country_showcase_module * select, html body #showcase_country_showcase_module * input,
+    html body #showcase_hike_showcase_module * select, html body #showcase_hike_showcase_module * input,
+    html body #isolated * select, html body #isolated * input {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+html body #ittour_showcase_center_box.it_main_center {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#isolated, #isolated tr {
+    background: transparent;
+    border: none;
+}
+
+    #isolated .ittour_order_block_transport_info tr td {
+        margin: 0;
+        padding: 0;
+    }
+
+#isolate .orbit-wrapper * {
+    width: 320px;
+    height: 220px;
+    max-width: 320px;
+    max-height: 220px;
+}
